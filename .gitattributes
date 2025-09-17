@@ -26,3 +26,6 @@
 
 # Optional: motion graphics / templates
 *.svg filter=lfs diff=lfs merge=lfs -text
+
+# Zip Files
+*.zip filter=lfs diff=lfs merge=lfs -text
