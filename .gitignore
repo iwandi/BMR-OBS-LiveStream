@@ -16,3 +16,4 @@ config/obs-studio/crashes/
 
 # Service cache (login tokens, OAuth, etc.)
 config/obs-studio/basic/service.json
+config/obs-studio/plugin_config/obs-browser
