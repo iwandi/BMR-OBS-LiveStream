@@ -68,7 +68,7 @@
             "name": "Scene"
         }
     ],
-    "name": "Untitled",
+    "name": "FPV-Race-Setup",
     "sources": [
         {
             "prev_ver": 520159234,
@@ -133,7 +133,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -17,
+    "scaling_level": -2,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
