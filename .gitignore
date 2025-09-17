@@ -1,3 +1,18 @@
-﻿bin/*
+﻿# Ignore Portable OBS Studio files
+bin/*
 obs-plugins/*
 data/*
+
+# UI state cache
+config/obs-studio/basic/ui.json
+
+# Ignore backup files and logs
+*.bak
+config/obs-studio/logs
+config/obs-studio/profiler_data
+
+# Crash reports
+config/obs-studio/crashes/
+
+# Service cache (login tokens, OAuth, etc.)
+config/obs-studio/basic/service.json
