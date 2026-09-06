@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Clean",
-    "current_program_scene": "Post-Stream",
+    "current_scene": "Info",
+    "current_program_scene": "Pre-Race",
     "scene_order": [
         {
             "name": "Pre-Stream"
@@ -610,11 +610,11 @@
                 "input": "rtsp://admin:123456@192.168.0.51:554/stream1",
                 "input_format": "rtsp_transport=tcp",
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "close_when_inactive": false,
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "close_when_inactive": false,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -972,8 +972,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -1470,6 +1470,8 @@
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.8": [],
+                "libobs.hide_scene_item.8": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -1479,9 +1481,7 @@
                 "libobs.show_scene_item.6": [],
                 "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.7": [],
-                "libobs.hide_scene_item.7": [],
-                "libobs.show_scene_item.8": [],
-                "libobs.hide_scene_item.8": []
+                "libobs.hide_scene_item.7": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1502,8 +1502,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -2055,6 +2055,8 @@
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
@@ -2066,9 +2068,7 @@
                 "libobs.show_scene_item.7": [],
                 "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": [],
-                "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": []
+                "libobs.hide_scene_item.9": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2089,8 +2089,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -2505,8 +2505,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -2864,8 +2864,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -3223,8 +3223,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -3582,8 +3582,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -3941,8 +3941,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -5991,7 +5991,7 @@
                     {
                         "name": "Cam 01",
                         "source_uuid": "ca3c6a28-ab3e-41dc-bc06-3d8509cb1b65",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6156,7 +6156,7 @@
                     {
                         "name": "Cam 04",
                         "source_uuid": "36b5d8f7-1b3f-4bca-ac55-1ba6ae9a7f53",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -14587,8 +14587,8 @@
                 "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
                 "is_local_file": false,
                 "clear_on_media_end": false,
-                "reconnect_delay_sec": 2,
-                "restart_on_activate": false
+                "restart_on_activate": false,
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -15588,28 +15588,7 @@
         }
     ],
     "transitions": [],
-    "saved_projectors": [
-        {
-            "name": "CameraPreview",
-            "monitor": -1,
-            "type": 1,
-            "geometry": "AdnQywADAAAAAAABAAAEsAAAB34AAAkuAAAAAQAABM8AAAd+AAAJLgAAAAAAAAAAB4AAAAABAAAEzwAAB34AAAku",
-            "alwaysOnTopOverridden": false
-        },
-        {
-            "monitor": -1,
-            "type": 3,
-            "geometry": "AdnQywADAAAAAAQ0AAAHJgAABhMAAAhSAAAENAAAB0UAAAYTAAAIUgAAAAAAAAAAB4AAAAQ0AAAHRQAABhMAAAhS",
-            "alwaysOnTopOverridden": false
-        },
-        {
-            "name": "Benchmark",
-            "monitor": -1,
-            "type": 1,
-            "geometry": "AdnQywADAAAAAAEyAAAHJgAAAxEAAAhSAAABMgAAB0UAAAMRAAAIUgAAAAAAAAAAB4AAAAEyAAAHRQAAAxEAAAhS",
-            "alwaysOnTopOverridden": false
-        }
-    ],
+    "saved_projectors": [],
     "canvases": [],
     "current_transition": "Fade",
     "transition_duration": 300,
