@@ -4,7 +4,7 @@
     "display_name": "Beta / Release Candidate",
     "description": "Pre-Release builds",
     "visible": true,
-    "enabled": true,
+    "enabled": false,
     "macos": true,
     "windows": true
   }

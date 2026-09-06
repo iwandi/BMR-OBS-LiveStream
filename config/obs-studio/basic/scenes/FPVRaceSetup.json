@@ -45,7 +45,7 @@
         "volume": 1.0,
         "balance": 0.5,
         "enabled": true,
-        "muted": false,
+        "muted": true,
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -61,7 +61,7 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Cam 02",
+    "current_scene": "Cam 09",
     "current_program_scene": "Info",
     "scene_order": [
         {
@@ -69,6 +69,9 @@
         },
         {
             "name": "Pre-Race"
+        },
+        {
+            "name": "Tree"
         },
         {
             "name": "Race"
@@ -98,16 +101,19 @@
             "name": "Clean"
         },
         {
+            "name": "Cam only"
+        },
+        {
             "name": "Null"
         },
         {
             "name": "FPV Capture 01"
         },
         {
-            "name": "All FPV Fixed"
+            "name": "FPV Capture 02"
         },
         {
-            "name": "FPV Capture 02"
+            "name": "All FPV Fixed"
         },
         {
             "name": "Null + Audio"
@@ -174,6 +180,9 @@
         },
         {
             "name": "CameraSelect"
+        },
+        {
+            "name": "Preview Low"
         }
     ],
     "name": "FPV-Race-Setup",
@@ -630,7 +639,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 6,
                 "custom_size": false,
                 "items": [
                     {
@@ -801,9 +810,9 @@
                     {
                         "name": "Cam 02 VLC",
                         "source_uuid": "7e9ad544-aeec-42ec-addc-991c138e2c8c",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": -1.100000023841858,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -819,12 +828,12 @@
                         "id": 2,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": -46.5,
+                            "y": 8.5
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
+                            "x": -1.8638888597488403,
+                            "y": -0.9842592477798462
                         },
                         "scale": {
                             "x": 1.0,
@@ -835,12 +844,67 @@
                             "y": 1.0
                         },
                         "bounds": {
+                            "x": 2027.0,
+                            "y": 1140.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.7537035942077637,
+                            "y": 2.1111111640930176
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 06 VLC",
+                        "source_uuid": "1484ecbc-4b7d-491e-b074-56a8a87c6332",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 2.5,
+                        "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
                         },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -214.0,
+                            "y": -98.0
+                        },
+                        "pos_rel": {
+                            "x": -2.174074172973633,
+                            "y": -1.1814814805984497
+                        },
+                        "scale": {
+                            "x": 1.0460937023162842,
+                            "y": 1.0458333492279053
+                        },
+                        "scale_rel": {
+                            "x": 1.0460937023162842,
+                            "y": 1.0458333492279053
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
                         "bounds_rel": {
-                            "x": 3.555555582046509,
-                            "y": 2.0
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -875,7 +939,9 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -928,7 +994,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 7,
                 "custom_size": false,
                 "items": [
                     {
@@ -1052,7 +1118,7 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
@@ -1078,12 +1144,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -1150,6 +1216,171 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 07 VLC",
+                        "source_uuid": "806b1cd9-3c2a-4855-ab92-af6904402e85",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 3",
+                        "source_uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -424.0,
+                            "y": 189.0
+                        },
+                        "pos_rel": {
+                            "x": -2.5629630088806152,
+                            "y": -0.6499999761581421
+                        },
+                        "scale": {
+                            "x": 1.068750023841858,
+                            "y": 1.0685185194015503
+                        },
+                        "scale_rel": {
+                            "x": 1.068750023841858,
+                            "y": 1.0685185194015503
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 02 VLC",
+                        "source_uuid": "7e9ad544-aeec-42ec-addc-991c138e2c8c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": -3.9200000762939453,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 7,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -126.0,
+                            "y": 5.5
+                        },
+                        "pos_rel": {
+                            "x": -2.01111102104187,
+                            "y": -0.989814817905426
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 2142.5,
+                            "y": 1224.5
+                        },
+                        "bounds_rel": {
+                            "x": 3.967592477798462,
+                            "y": 2.267592668533325
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -1173,7 +1404,13 @@
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": []
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1221,7 +1458,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 9,
                 "custom_size": false,
                 "items": [
                     {
@@ -1235,7 +1472,7 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
@@ -1261,12 +1498,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -1400,7 +1637,7 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
@@ -1426,12 +1663,232 @@
                             "y": 1.0
                         },
                         "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 07 VLC",
+                        "source_uuid": "806b1cd9-3c2a-4855-ab92-af6904402e85",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
                         "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 04 Low",
+                        "source_uuid": "2ab88544-fe37-4432-bb9d-eb9a84708119",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 8,
+                        "group_item_backup": false,
+                        "pos": {
                             "x": 0.0,
                             "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 04 PTZ",
+                        "source_uuid": "547b19e4-81cb-4eca-b465-a3a9ceb209ec",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 7,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 05 VLC",
+                        "source_uuid": "7e93dcd6-94db-4615-9c88-6eb1411f2e1c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 9,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -1466,7 +1923,15 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.8": [],
+                "libobs.hide_scene_item.8": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": [],
+                "libobs.show_scene_item.9": [],
+                "libobs.hide_scene_item.9": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1514,7 +1979,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 6,
                 "custom_size": false,
                 "items": [
                     {
@@ -1693,7 +2158,7 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
@@ -1719,12 +2184,122 @@
                             "y": 1.0
                         },
                         "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 04 Low",
+                        "source_uuid": "2ab88544-fe37-4432-bb9d-eb9a84708119",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
                         "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 04 PTZ",
+                        "source_uuid": "547b19e4-81cb-4eca-b465-a3a9ceb209ec",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
                             "x": 0.0,
                             "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -1759,7 +2334,11 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -1807,7 +2386,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 5,
                 "custom_size": false,
                 "items": [
                     {
@@ -2029,6 +2608,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 3",
+                        "source_uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -2052,7 +2686,9 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2100,7 +2736,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 5,
                 "custom_size": false,
                 "items": [
                     {
@@ -2114,7 +2750,7 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
@@ -2140,12 +2776,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -2279,7 +2915,7 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
@@ -2305,12 +2941,67 @@
                             "y": 1.0
                         },
                         "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 03 VLC",
+                        "source_uuid": "b53a54f3-8bce-4915-8137-14cc537da186",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
                             "x": 0.0,
                             "y": 0.0
                         },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -2345,7 +3036,9 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2393,7 +3086,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 5,
                 "custom_size": false,
                 "items": [
                     {
@@ -2615,6 +3308,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "Web Cam",
+                        "source_uuid": "a15c9588-40a9-4ad5-a38f-5f5b321ddc0f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -304.0,
+                            "y": -288.0
+                        },
+                        "pos_rel": {
+                            "x": -2.34074068069458,
+                            "y": -1.5333333015441895
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 2655.0,
+                            "y": 1536.0
+                        },
+                        "bounds_rel": {
+                            "x": 4.916666507720947,
+                            "y": 2.844444513320923
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -2638,7 +3386,9 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2686,7 +3436,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 4,
+                "id_counter": 5,
                 "custom_size": false,
                 "items": [
                     {
@@ -2700,7 +3450,7 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
@@ -2726,12 +3476,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -2865,6 +3615,61 @@
                             "y": 1080.0
                         },
                         "align": 5,
+                        "bounds_type": 4,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 300,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Logitech BRIO 4k",
+                        "source_uuid": "89490d7b-1f3b-4e95-994c-7d3337e94c3d",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
                         "bounds_type": 0,
                         "bounds_align": 0,
                         "bounds_crop": false,
@@ -2872,7 +3677,7 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 2,
+                        "id": 5,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -2931,7 +3736,9 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -3617,7 +4424,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 2,
+                "id_counter": 4,
                 "custom_size": false,
                 "items": [
                     {
@@ -3897,11 +4704,11 @@
                         "id": 3,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
+                            "x": -47.0,
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
+                            "x": -1.8648147583007812,
                             "y": -1.0
                         },
                         "scale": {
@@ -4141,7 +4948,7 @@
                     {
                         "name": "Overlay - PostRace",
                         "source_uuid": "347bad00-6c3f-4597-b016-3290cef7a637",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -4898,9 +5705,65 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 0,
+                "id_counter": 1,
                 "custom_size": false,
-                "items": []
+                "items": [
+                    {
+                        "name": "XAir",
+                        "source_uuid": "5dbabca7-b313-4cc4-92f2-d4e2ac9e27db",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
             },
             "mixers": 0,
             "sync": 0,
@@ -4914,7 +5777,9 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": []
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -5155,7 +6020,7 @@
                     {
                         "name": "Cam 05",
                         "source_uuid": "da1fee3e-c5f5-4330-b158-3d054d8fc847",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5210,7 +6075,7 @@
                     {
                         "name": "Cam 06",
                         "source_uuid": "8b6f2c1f-9b1e-4ba7-8f8d-eb92d1f716db",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5476,9 +6341,9 @@
             "settings": {
                 "playlist": [
                     {
-                        "value": "http://158.58.130.148/mjpg/video.mjpg",
+                        "value": "rtsp://admin:123456@192.168.77.111:554/stream1",
                         "uuid": "48e4eef5-02ba-43be-9bc2-8094a0b09fcd",
-                        "selected": false,
+                        "selected": true,
                         "hidden": false
                     }
                 ],
@@ -5491,7 +6356,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -5521,9 +6386,9 @@
             "settings": {
                 "playlist": [
                     {
-                        "value": "http://67.53.46.161:65123/mjpg/video.mjpg",
+                        "value": "rtsp://admin:123456@192.168.77.108:554/stream1",
                         "uuid": "a227e99b-c8dc-4cd6-a056-2921a2f009bd",
-                        "selected": false,
+                        "selected": true,
                         "hidden": false
                     }
                 ],
@@ -5536,7 +6401,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -5564,6 +6429,14 @@
             "id": "vlc_source",
             "versioned_id": "vlc_source",
             "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:123456@192.168.77.115:554/stream1",
+                        "uuid": "645fa12b-0084-44da-b941-70fd29022b0b",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ],
                 "loop": false,
                 "playback_behavior": "always_play"
             },
@@ -5573,7 +6446,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -5601,6 +6474,14 @@
             "id": "vlc_source",
             "versioned_id": "vlc_source",
             "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:admin123456@192.168.77.104:554/h264Preview_01_main",
+                        "uuid": "79f3517a-29fb-4ed8-b82d-95cafbbf13bb",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ],
                 "playback_behavior": "always_play"
             },
             "mixers": 255,
@@ -5637,6 +6518,14 @@
             "id": "vlc_source",
             "versioned_id": "vlc_source",
             "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:ZSOYjNOm@192.168.77.117/Preview_01_main",
+                        "uuid": "0e7f4e4e-f300-47a9-87dd-ed14bd6d473d",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ],
                 "playback_behavior": "always_play"
             },
             "mixers": 255,
@@ -5645,7 +6534,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -5673,6 +6562,14 @@
             "id": "vlc_source",
             "versioned_id": "vlc_source",
             "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:123456@192.168.77.102:554/stream1",
+                        "uuid": "091632ab-dd8f-4bb6-a0d1-ac2488204345",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ],
                 "playback_behavior": "always_play"
             },
             "mixers": 255,
@@ -5681,7 +6578,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -5700,7 +6597,36 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 520159234,
+                    "name": "Color Correction",
+                    "uuid": "3d7102bd-c4f2-4585-bb97-f6fbed6994db",
+                    "id": "color_filter",
+                    "versioned_id": "color_filter_v2",
+                    "settings": {
+                        "gamma": 0.36,
+                        "brightness": 0.0193
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 520159234,
@@ -5709,6 +6635,14 @@
             "id": "vlc_source",
             "versioned_id": "vlc_source",
             "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://user:123456@192.168.77.110:554/Stream1",
+                        "uuid": "64ca2bec-7988-4902-8a07-10fc79212590",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ],
                 "loop": false,
                 "playback_behavior": "always_play"
             },
@@ -5783,6 +6717,14 @@
             "id": "vlc_source",
             "versioned_id": "vlc_source",
             "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:admin123456@192.168.77.104/h264Preview_01_main",
+                        "uuid": "5210cb85-d9f5-4caf-9844-d3a064c91c3e",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ],
                 "loop": false,
                 "playback_behavior": "always_play"
             },
@@ -5792,7 +6734,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": false,
+            "muted": true,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -6289,7 +7231,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 8,
+                "id_counter": 13,
                 "custom_size": false,
                 "items": [
                     {
@@ -6731,6 +7673,226 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 1",
+                        "source_uuid": "3656698d-964d-475d-8da2-848d9046335f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 9,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 2",
+                        "source_uuid": "844f5d4b-caa5-4240-9d34-fb5cdb29e12e",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 11,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 3",
+                        "source_uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 12,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 4",
+                        "source_uuid": "a4c3c242-c79d-4e71-84e4-e358052499d5",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -6762,7 +7924,15 @@
                 "libobs.show_scene_item.7": [],
                 "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.8": [],
-                "libobs.hide_scene_item.8": []
+                "libobs.hide_scene_item.8": [],
+                "libobs.show_scene_item.9": [],
+                "libobs.hide_scene_item.9": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -6777,7 +7947,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 8,
+                "id_counter": 9,
                 "custom_size": false,
                 "items": [
                     {
@@ -7219,6 +8389,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 2",
+                        "source_uuid": "844f5d4b-caa5-4240-9d34-fb5cdb29e12e",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 9,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -7250,7 +8475,9 @@
                 "libobs.show_scene_item.7": [],
                 "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.8": [],
-                "libobs.hide_scene_item.8": []
+                "libobs.hide_scene_item.8": [],
+                "libobs.show_scene_item.9": [],
+                "libobs.hide_scene_item.9": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -9359,7 +10586,7 @@
                     {
                         "name": "VG_ Race - Info",
                         "source_uuid": "c1e63c6e-4f64-44e8-882f-a4a2d2e89410",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -9377,20 +10604,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1284.0,
-                            "y": 726.5
+                            "x": -1.0,
+                            "y": -1.0
                         },
                         "pos_rel": {
-                            "x": 0.6001372337341309,
-                            "y": 0.34567904472351074
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
                         },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -9432,11 +10659,11 @@
                         "id": 8,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 646.0,
+                            "x": 965.0,
                             "y": 726.5
                         },
                         "pos_rel": {
-                            "x": -0.5816187262535095,
+                            "x": 0.009259259328246117,
                             "y": 0.34567904472351074
                         },
                         "scale": {
@@ -9487,11 +10714,11 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 8.0,
+                            "x": 327.0,
                             "y": 726.5
                         },
                         "pos_rel": {
-                            "x": -1.7633744478225708,
+                            "x": -1.1724966764450073,
                             "y": 0.34567904472351074
                         },
                         "scale": {
@@ -9837,8 +11064,8 @@
                             "y": 1.0
                         },
                         "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
+                            "x": 0.0020833334419876337,
+                            "y": 0.0020833334419876337
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -10550,30 +11777,67 @@
             "settings": {
                 "files": [
                     {
-                        "value": "C:/RC/Streaming/OBS-Studio-Portable/media/logos/MultiGP-Tier-1.png",
-                        "uuid": "5ccbbe25-9fc0-4aab-b06e-841fae06725c",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/OBS-Studio-Portable/media/logos/Sponsor-Supra.png",
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor-Supra.png",
                         "uuid": "d0666fd4-f501-4fca-be5e-b768c46dd1b2",
                         "selected": false,
                         "hidden": false
                     },
                     {
-                        "value": "C:/RC/Streaming/OBS-Studio-Portable/media/logos/BMR_Ultra3_export.png",
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/BMR_Ultra3_export.png",
                         "uuid": "f07b7641-1071-4362-a502-f5900f90059a",
                         "selected": false,
                         "hidden": false
                     },
                     {
-                        "value": "C:/RC/Streaming/OBS-Studio-Portable/media/logos/BMR-Winged-Raster-1200dpi.png",
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Gnizdoteam_01.png",
+                        "uuid": "6a75f3fc-d8c2-44a5-b4d8-b35549a7ecad",
+                        "selected": true,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/BMR-Winged-Raster-1200dpi.png",
                         "uuid": "8cef3804-ace2-445d-a66c-11bc15e9533e",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Host_SV07Aich.png",
+                        "uuid": "23a0c390-390b-4905-821b-33ea9b182596",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor_big_Tattu_500w.png",
+                        "uuid": "1c2c27a1-a4a9-4e54-9e46-0d976afe850c",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor_medium_stickyfingers_500w.png",
+                        "uuid": "58fd2c21-98b9-4726-bab5-77bb9663bdff",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor_superbrezn_big_500w.png",
+                        "uuid": "6f594803-c618-4b6d-a240-829ecdda5c06",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor_3dp_500w.png",
+                        "uuid": "496a8631-8402-4d46-9794-8d3c289a5570",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Organizer_Aircrasher.png",
+                        "uuid": "858e9c98-c51c-4411-85c7-eaa7af08d0e2",
                         "selected": false,
                         "hidden": false
                     }
                 ],
+                "slide_time": 5000,
                 "use_custom_size": "640x360"
             },
             "mixers": 0,
@@ -10645,6 +11909,7 @@
                 "url": "http://localhost/PostRaceHeat.html",
                 "width": 1920,
                 "height": 1080,
+                "fps": 30,
                 "shutdown": true,
                 "restart_when_active": true
             },
@@ -10665,6 +11930,1566 @@
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "CamLink HDMI 1",
+            "uuid": "3656698d-964d-475d-8da2-848d9046335f",
+            "id": "dshow_input",
+            "versioned_id": "dshow_input",
+            "settings": {
+                "video_device_id": "Cam Link Pro HDMI-1 / Multiview:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03401000226}",
+                "last_video_device_id": "Cam Link Pro HDMI-1 / Multiview:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03401000226}"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "CamLink HDMI 2",
+            "uuid": "844f5d4b-caa5-4240-9d34-fb5cdb29e12e",
+            "id": "dshow_input",
+            "versioned_id": "dshow_input",
+            "settings": {
+                "video_device_id": "Cam Link Pro HDMI-2:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03402000226}",
+                "last_video_device_id": "Cam Link Pro HDMI-2:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03402000226}",
+                "active": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "CamLink HDMI 3",
+            "uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
+            "id": "dshow_input",
+            "versioned_id": "dshow_input",
+            "settings": {
+                "video_device_id": "Cam Link Pro HDMI-3:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03403000226}",
+                "last_video_device_id": "Cam Link Pro HDMI-3:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03403000226}",
+                "active": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 520159234,
+                    "name": "Color Correction",
+                    "uuid": "a0d19028-e02c-4448-b992-f97f5ac0ed5d",
+                    "id": "color_filter",
+                    "versioned_id": "color_filter_v2",
+                    "settings": {
+                        "gamma": 0.2,
+                        "contrast": 0.22,
+                        "brightness": -0.0358
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "CamLink HDMI 4",
+            "uuid": "a4c3c242-c79d-4e71-84e4-e358052499d5",
+            "id": "dshow_input",
+            "versioned_id": "dshow_input",
+            "settings": {
+                "video_device_id": "Cam Link Pro HDMI-4:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03404000226}",
+                "last_video_device_id": "Cam Link Pro HDMI-4:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03404000226}"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "XAir",
+            "uuid": "5dbabca7-b313-4cc4-92f2-d4e2ac9e27db",
+            "id": "wasapi_input_capture",
+            "versioned_id": "wasapi_input_capture",
+            "settings": {
+                "device_id": "{0.0.1.00000000}.{370acf5f-ea19-4ab7-858d-24c831e83c7e}"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Web Cam",
+            "uuid": "a15c9588-40a9-4ad5-a38f-5f5b321ddc0f",
+            "id": "dshow_input",
+            "versioned_id": "dshow_input",
+            "settings": {
+                "video_device_id": "BRIO 4K Stream Edition:\\\\?\\usb#22vid_046d&pid_086b&mi_00#229&ee91219&1&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "last_video_device_id": "BRIO 4K Stream Edition:\\\\?\\usb#22vid_046d&pid_086b&mi_00#229&ee91219&1&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Preview Low",
+            "uuid": "efe8a92a-ec16-49f9-af53-2012a424621c",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 12,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "Cam 01 low",
+                        "source_uuid": "8c450f15-097c-4352-8e48-f8e6049918e3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 0.75
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 0.75
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 02 Low",
+                        "source_uuid": "52c166a4-6be6-4a5b-b67b-6efa4ba5ac8d",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 4,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1280.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": 0.5925925970077515,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 0.9090909361839294,
+                            "y": 0.625
+                        },
+                        "scale_rel": {
+                            "x": 0.9090909361839294,
+                            "y": 0.625
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 06 Low",
+                        "source_uuid": "2511e4f8-9a58-4eea-bb78-947be0dc35b6",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 7,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 640.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -0.5925925970077515,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 0.6761363744735718,
+                            "y": 0.6753472089767456
+                        },
+                        "scale_rel": {
+                            "x": 0.6761363744735718,
+                            "y": 0.6753472089767456
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 07 Low",
+                        "source_uuid": "25f639a3-3b8d-4c9e-b7e3-b4a8f841ffb0",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 8,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 720.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": 0.3333333730697632
+                        },
+                        "scale": {
+                            "x": 0.762499988079071,
+                            "y": 0.762499988079071
+                        },
+                        "scale_rel": {
+                            "x": 0.762499988079071,
+                            "y": 0.762499988079071
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 04 Low",
+                        "source_uuid": "2ab88544-fe37-4432-bb9d-eb9a84708119",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 360.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -0.3333333134651184
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "bounds": {
+                            "x": 641.0,
+                            "y": 363.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.1870369911193848,
+                            "y": 0.6722221970558167
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 05 Low",
+                        "source_uuid": "1e1281ac-0ede-469c-b881-05c6970a78b7",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 630.0,
+                            "y": 360.0
+                        },
+                        "pos_rel": {
+                            "x": -0.6111111044883728,
+                            "y": -0.3333333134651184
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 09 Low",
+                        "source_uuid": "94a29405-9246-4d69-a2e3-fbfe6021add6",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 3,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1280.0,
+                            "y": 720.0
+                        },
+                        "pos_rel": {
+                            "x": 0.5925925970077515,
+                            "y": 0.3333333730697632
+                        },
+                        "scale": {
+                            "x": 0.7437499761581421,
+                            "y": 0.7427386045455933
+                        },
+                        "scale_rel": {
+                            "x": 0.7437499761581421,
+                            "y": 0.7427386045455933
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Web Cam",
+                        "source_uuid": "a15c9588-40a9-4ad5-a38f-5f5b321ddc0f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 9,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 640.0,
+                            "y": 720.0
+                        },
+                        "pos_rel": {
+                            "x": -0.5925925970077515,
+                            "y": 0.3333333730697632
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "CamLink HDMI 3",
+                        "source_uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 10,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1280.0,
+                            "y": 360.0
+                        },
+                        "pos_rel": {
+                            "x": 0.5925925970077515,
+                            "y": -0.3333333134651184
+                        },
+                        "scale": {
+                            "x": 1.068750023841858,
+                            "y": 1.0685185194015503
+                        },
+                        "scale_rel": {
+                            "x": 1.068750023841858,
+                            "y": 1.0685185194015503
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 04 PTZ",
+                        "source_uuid": "547b19e4-81cb-4eca-b465-a3a9ceb209ec",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 11,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "pos_rel": {
+                            "x": -0.5925925970077515,
+                            "y": -0.3333333134651184
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 05 VLC",
+                        "source_uuid": "7e93dcd6-94db-4615-9c88-6eb1411f2e1c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 12,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 360.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -0.3333333134651184
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 640.0,
+                            "y": 360.0
+                        },
+                        "bounds_rel": {
+                            "x": 1.185185194015503,
+                            "y": 0.6666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.4": [],
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": [],
+                "libobs.show_scene_item.8": [],
+                "libobs.hide_scene_item.8": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
+                "libobs.show_scene_item.9": [],
+                "libobs.hide_scene_item.9": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 01 low",
+            "uuid": "8c450f15-097c-4352-8e48-f8e6049918e3",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:123456@192.168.77.111:554/stream2",
+                        "uuid": "a4de374c-239f-4ade-88b8-2d792d0792da",
+                        "selected": false,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 09 Low",
+            "uuid": "94a29405-9246-4d69-a2e3-fbfe6021add6",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:admin123456@192.168.77.104:554/h264Preview_01_sub",
+                        "uuid": "840ef12e-1d82-45f9-adf8-2392d3957d6a",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 02 Low",
+            "uuid": "52c166a4-6be6-4a5b-b67b-6efa4ba5ac8d",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:123456@192.168.77.108:554/stream2",
+                        "uuid": "4815ea2f-7717-4490-a561-7b09e748cf5d",
+                        "selected": false,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 04 Low",
+            "uuid": "2ab88544-fe37-4432-bb9d-eb9a84708119",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:12345678!@192.168.77.105:554/Preview_01_sub",
+                        "uuid": "e207db62-b439-4c26-9cf0-1a80b2bcb37b",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 05 Low",
+            "uuid": "1e1281ac-0ede-469c-b881-05c6970a78b7",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:ZSOYjNOm@192.168.77.117/h264Preview_01_sub",
+                        "uuid": "2ee4793a-68fc-4c49-8aeb-d6be4a394409",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 06 Low",
+            "uuid": "2511e4f8-9a58-4eea-bb78-947be0dc35b6",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:123456@192.168.77.102:554/stream2",
+                        "uuid": "97b3096f-ed7f-4e58-9c78-a7ba917c1e80",
+                        "selected": false,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 520159234,
+                    "name": "Color Correction",
+                    "uuid": "4bf6bd58-1880-4dac-a14e-24f1388a3b1e",
+                    "id": "color_filter",
+                    "versioned_id": "color_filter_v2",
+                    "settings": {
+                        "gamma": 0.23,
+                        "contrast": 0.24,
+                        "brightness": 0.0358,
+                        "saturation": 0.15
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 07 Low",
+            "uuid": "25f639a3-3b8d-4c9e-b7e3-b4a8f841ffb0",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:123456@192.168.77.115:554/stream2",
+                        "uuid": "2ee80b61-9216-46cf-ae20-11d3ab88e51c",
+                        "selected": false,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 04 PTZ",
+            "uuid": "547b19e4-81cb-4eca-b465-a3a9ceb209ec",
+            "id": "vlc_source",
+            "versioned_id": "vlc_source",
+            "settings": {
+                "playlist": [
+                    {
+                        "value": "rtsp://admin:12345678!@192.168.77.105:554/Preview_01_main",
+                        "uuid": "4742513a-b75a-4eaa-9911-b0c3ff23127d",
+                        "selected": true,
+                        "hidden": false
+                    }
+                ]
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "VLCSource.PlayPause": [],
+                "VLCSource.Restart": [],
+                "VLCSource.Stop": [],
+                "VLCSource.PlaylistNext": [],
+                "VLCSource.PlaylistPrev": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam only",
+            "uuid": "36ea2001-e90f-44f4-89a8-b0fa40b9fc7e",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 1,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "Background",
+                        "source_uuid": "458890aa-ed68-4fbf-a0b5-c50e721f2ea0",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Tree",
+            "uuid": "0f0342e9-47f8-4bc4-aec5-0b7007ac430f",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 2,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "Background",
+                        "source_uuid": "458890aa-ed68-4fbf-a0b5-c50e721f2ea0",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Live Time Tree",
+                        "source_uuid": "dc510fef-3a95-4ed9-a6ce-4ca36e669195",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Live Time Tree",
+            "uuid": "dc510fef-3a95-4ed9-a6ce-4ca36e669195",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
+            "settings": {
+                "url": "https://aircrasher.livefpv.com/results/?p=view_brackets&round_id=1537047&class_id=13762&fullscreen",
+                "width": 2200,
+                "height": 1900,
+                "fps": 31,
+                "css": "/* 1. Make the master background completely transparent */\nhtml, body, #wrapper, .container, .main-content, #page-wrapper, \nbody.fullscreen, div.panel, .panel-default, .panel-body, .table-responsive {\n    background: transparent !important;\n    background-color: transparent !important;\n    border: none !important;\n}\n\n/* 2. Clear out standard table background fills */\ntable, tr, td, th, .list-group-item {\n    background: transparent;\n    background-color: transparent;\n    border-color: rgba(255, 255, 255, 0.15) !important;\n}\n\n/* 3. KEEP THE RACE BLOCK STATUS COLORS ACTIVE */\n.success, tr.success, td.success, .bg-success {\n    background-color: #dff0d8 !important; /* Green */\n    background: #dff0d8 !important;\n}\n.warning, tr.warning, td.warning, .bg-warning {\n    background-color: #fcf8e3 !important; /* Yellow */\n    background: #fcf8e3 !important;\n}\n.danger, tr.danger, td.danger, .bg-danger {\n    background-color: #f2dede !important; /* Red */\n    background: #f2dede !important;\n}\n.info, tr.info, td.info, .bg-info {\n    background-color: #d9edf7 !important; /* Blue */\n    background: #d9edf7 !important;\n}\n\n/* 4. HIDE ICONS AND BUTTON TEXT INSIDE BRACKETS (e.g., \"View Results/Video\") */\n.fa, .glyphicon, [class^=\"fa-\"], [class*=\" fa-\"], \na.btn-xs, .table td a, th a, .btn-default {\n    display: none !important;\n    visibility: hidden !important;\n    opacity: 0 !important;\n}\n\n/* 5. NUKE ALL TOP NAVIGATION AND HEADERS COMPLETELY */\nnav, .navbar, .navbar-header, .navbar-static-top, .navbar-default,\n#sidebar-wrapper, .header, #header, footer, .footer, h1, .page-header {\n    display: none !important;\n    visibility: hidden !important;\n    height: 0px !important;\n    margin: 0px !important;\n    padding: 0px !important;\n}\n\n/* 6. Push remaining bracket blocks to the very top edge of the window */\n#page-wrapper, .container-fluid, .row {\n    padding-top: 0px !important;\n    margin-top: 0px !important;\n    top: 0px !important;\n}"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Logitech BRIO 4k",
+            "uuid": "89490d7b-1f3b-4e95-994c-7d3337e94c3d",
+            "id": "dshow_input",
+            "versioned_id": "dshow_input",
+            "settings": {
+                "video_device_id": "BRIO 4K Stream Edition:\\\\?\\usb#22vid_046d&pid_086b&mi_00#229&ee91219&1&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "last_video_device_id": "BRIO 4K Stream Edition:\\\\?\\usb#22vid_046d&pid_086b&mi_00#229&ee91219&1&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10697,35 +13522,13 @@
         }
     ],
     "transitions": [],
-    "saved_projectors": [
-        {
-            "name": "All FPV Fixed",
-            "monitor": -1,
-            "type": 1,
-            "geometry": "AdnQywADAAAAAAoA////+AAAEX8AAAQHAAANHQAAAU4AAA78AAACWwAAAAICAAAAB4AAAAoAAAAAFwAAEX8AAAQH",
-            "alwaysOnTopOverridden": false
-        },
-        {
-            "name": "CameraPreview",
-            "monitor": -1,
-            "type": 1,
-            "geometry": "AdnQywADAAAAAAoA////+AAAEX8AAAQHAAANjAAAAZsAAA9rAAACqAAAAAICAAAAB4AAAAoAAAAAFwAAEX8AAAQH",
-            "alwaysOnTopOverridden": false
-        },
-        {
-            "name": "CastView",
-            "monitor": -1,
-            "type": 1,
-            "geometry": "AdnQywADAAAAAAoA////+AAAEX8AAAQHAAAM9AAAAg0AAA7TAAADGgAAAAICAAAAB4AAAAoAAAAAFwAAEX8AAAQH",
-            "alwaysOnTopOverridden": false
-        }
-    ],
+    "saved_projectors": [],
     "canvases": [],
     "current_transition": "Fade",
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -8,
+    "scaling_level": -13,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -10734,44 +13537,26 @@
     "modules": {
         "scripts-tool": [
             {
-                "path": "C:/RC/Streaming/OBS-Studio-Portable/data/obs-plugins/frontend-tools/scripts/Dynamic Source Grid Organizer.lua",
+                "path": "C:/RC/BMR-OBS-LiveStream/data/obs-plugins/frontend-tools/scripts/Dynamic Source Grid Organizer.lua",
                 "settings": {
                     "language_name": "English",
+                    "scene_name": "Race - Grid",
+                    "source_prefix": "",
                     "spacing": 10,
                     "margin": 0,
                     "x_offset": 0,
-                    "y_offset": 0,
-                    "source_prefix": "VG_",
-                    "scene_name": "Race - Grid"
+                    "y_offset": 0
                 }
             },
             {
-                "path": "C:/RC/Streaming/OBS-Studio-Portable/data/obs-plugins/frontend-tools/scripts/refresh-browsers.lua",
+                "path": "C:/RC/BMR-OBS-LiveStream/data/obs-plugins/frontend-tools/scripts/refresh-browsers.lua",
                 "settings": {
                     "refresh_browsers.trigger": []
                 }
             },
             {
-                "path": "C:/RC/Streaming/OBS-Studio-Portable/data/obs-plugins/frontend-tools/scripts/CameraDirectControl.lua",
+                "path": "C:/RC/BMR-OBS-LiveStream/data/obs-plugins/frontend-tools/scripts/CameraDirectControl.lua",
                 "settings": {
-                    "camera1": [
-                        {
-                            "control": true,
-                            "key": "OBS_KEY_1"
-                        }
-                    ],
-                    "camera2": [
-                        {
-                            "control": true,
-                            "key": "OBS_KEY_2"
-                        }
-                    ],
-                    "camera3": [
-                        {
-                            "control": true,
-                            "key": "OBS_KEY_3"
-                        }
-                    ],
                     "camera4": [
                         {
                             "control": true,
@@ -10808,7 +13593,25 @@
                             "key": "OBS_KEY_9"
                         }
                     ],
-                    "restore_all": []
+                    "restore_all": [],
+                    "camera1": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_1"
+                        }
+                    ],
+                    "camera2": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_2"
+                        }
+                    ],
+                    "camera3": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_3"
+                        }
+                    ]
                 }
             }
         ],
@@ -10836,6 +13639,10 @@
             "lang_id": 2057,
             "provider": "mssapi"
         }
+    },
+    "resolution": {
+        "x": 1920,
+        "y": 1080
     },
     "version": 2
 }
