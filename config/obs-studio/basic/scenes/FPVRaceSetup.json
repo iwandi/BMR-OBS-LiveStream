@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "VG_ FPV 2-4",
-    "current_program_scene": "FPV Capture 01",
+    "current_scene": "Source Setup",
+    "current_program_scene": "Pre-Race",
     "scene_order": [
         {
             "name": "Pre-Stream"
@@ -113,10 +113,10 @@
             "name": "FPV Capture 01"
         },
         {
-            "name": "FPV Capture 8 in 1"
+            "name": "FPV Capture 02"
         },
         {
-            "name": "FPV Capture 02"
+            "name": "FPV Capture 8 in 1"
         },
         {
             "name": "All FPV Fixed"
@@ -9306,13 +9306,13 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
                         "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
+                        "crop_right": 1280,
+                        "crop_bottom": 720,
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
@@ -9332,12 +9332,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -9446,7 +9446,7 @@
                     {
                         "name": "FPV Capture 01",
                         "source_uuid": "6b2ea500-6380-4b18-8549-6f7c988463fb",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -9509,13 +9509,13 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
+                        "crop_top": 360,
+                        "crop_right": 1280,
+                        "crop_bottom": 360,
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
@@ -9535,12 +9535,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -9649,7 +9649,7 @@
                     {
                         "name": "FPV Capture 01",
                         "source_uuid": "6b2ea500-6380-4b18-8549-6f7c988463fb",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -9712,12 +9712,12 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
+                        "crop_top": 720,
+                        "crop_right": 1280,
                         "crop_bottom": 0,
                         "id": 4,
                         "group_item_backup": false,
@@ -9738,12 +9738,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -9852,7 +9852,7 @@
                     {
                         "name": "FPV Capture 01",
                         "source_uuid": "6b2ea500-6380-4b18-8549-6f7c988463fb",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -9915,13 +9915,13 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
-                        "crop_left": 0,
+                        "crop_left": 640,
                         "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
+                        "crop_right": 640,
+                        "crop_bottom": 720,
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
@@ -9941,12 +9941,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -10055,7 +10055,7 @@
                     {
                         "name": "FPV Capture 02",
                         "source_uuid": "d46c19e5-a479-4e1d-86d6-6679c0f72194",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -10118,13 +10118,13 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
+                        "crop_left": 640,
+                        "crop_top": 360,
+                        "crop_right": 640,
+                        "crop_bottom": 360,
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
@@ -10144,12 +10144,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -10258,7 +10258,7 @@
                     {
                         "name": "FPV Capture 02",
                         "source_uuid": "d46c19e5-a479-4e1d-86d6-6679c0f72194",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -10321,12 +10321,12 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
+                        "crop_left": 640,
+                        "crop_top": 720,
+                        "crop_right": 640,
                         "crop_bottom": 0,
                         "id": 5,
                         "group_item_backup": false,
@@ -10347,12 +10347,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -10461,7 +10461,7 @@
                     {
                         "name": "FPV Capture 02",
                         "source_uuid": "d46c19e5-a479-4e1d-86d6-6679c0f72194",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -10524,13 +10524,13 @@
                             "y": 1080.0
                         },
                         "align": 5,
-                        "bounds_type": 0,
+                        "bounds_type": 2,
                         "bounds_align": 0,
                         "bounds_crop": false,
-                        "crop_left": 0,
+                        "crop_left": 1280,
                         "crop_top": 0,
                         "crop_right": 0,
-                        "crop_bottom": 0,
+                        "crop_bottom": 720,
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
@@ -10550,12 +10550,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -10664,7 +10664,7 @@
                     {
                         "name": "FPV Capture 02",
                         "source_uuid": "d46c19e5-a479-4e1d-86d6-6679c0f72194",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -10680,6 +10680,61 @@
                         "crop_right": 0,
                         "crop_bottom": 0,
                         "id": 3,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "FPV Capture 8 in 1",
+                        "source_uuid": "56478dbf-ba0f-4790-8b44-dc0287453302",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 1280,
+                        "crop_top": 360,
+                        "crop_right": 0,
+                        "crop_bottom": 360,
+                        "id": 5,
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
@@ -10759,61 +10814,6 @@
                         "bounds_rel": {
                             "x": 3.555555582046509,
                             "y": 2.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "FPV Capture 8 in 1",
-                        "source_uuid": "56478dbf-ba0f-4790-8b44-dc0287453302",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 5,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -12075,7 +12075,7 @@
                 "url": "http://localhost/PreStream.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12257,7 +12257,7 @@
                 "url": "http://localhost/PostStream.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "shutdown": false,
                 "restart_when_active": true
             },
@@ -12294,7 +12294,7 @@
                 "url": "http://localhost/Info.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12330,7 +12330,7 @@
                 "url": "http://localhost/PreRaceMini.html",
                 "width": 1920,
                 "height": 1079,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12366,7 +12366,7 @@
                 "url": "http://localhost/PostRace.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12402,7 +12402,7 @@
                 "url": "http://localhost/RaceLivePosEst.html",
                 "width": 1980,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "shutdown": false,
                 "restart_when_active": true
             },
@@ -12439,7 +12439,7 @@
                 "url": "http://localhost/RaceHeader.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12475,7 +12475,7 @@
                 "url": "http://localhost/Clean.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12511,7 +12511,7 @@
                 "url": "http://localhost/RaceHeat.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12642,7 +12642,7 @@
                 "url": "http://localhost/RaceOverlay.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -12678,7 +12678,7 @@
                 "url": "http://localhost/PostRaceHeat.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "shutdown": true,
                 "restart_when_active": true
             },
@@ -14208,7 +14208,7 @@
                 "url": "https://aircrasher.livefpv.com/results/?p=view_brackets&round_id=1537047&class_id=13762&fullscreen",
                 "width": 2200,
                 "height": 1900,
-                "fps": 30,
+                "fps": 31,
                 "css": "/* 1. Make the master background completely transparent */\nhtml, body, #wrapper, .container, .main-content, #page-wrapper, \nbody.fullscreen, div.panel, .panel-default, .panel-body, .table-responsive {\n    background: transparent !important;\n    background-color: transparent !important;\n    border: none !important;\n}\n\n/* 2. Clear out standard table background fills */\ntable, tr, td, th, .list-group-item {\n    background: transparent;\n    background-color: transparent;\n    border-color: rgba(255, 255, 255, 0.15) !important;\n}\n\n/* 3. KEEP THE RACE BLOCK STATUS COLORS ACTIVE */\n.success, tr.success, td.success, .bg-success {\n    background-color: #dff0d8 !important; /* Green */\n    background: #dff0d8 !important;\n}\n.warning, tr.warning, td.warning, .bg-warning {\n    background-color: #fcf8e3 !important; /* Yellow */\n    background: #fcf8e3 !important;\n}\n.danger, tr.danger, td.danger, .bg-danger {\n    background-color: #f2dede !important; /* Red */\n    background: #f2dede !important;\n}\n.info, tr.info, td.info, .bg-info {\n    background-color: #d9edf7 !important; /* Blue */\n    background: #d9edf7 !important;\n}\n\n/* 4. HIDE ICONS AND BUTTON TEXT INSIDE BRACKETS (e.g., \"View Results/Video\") */\n.fa, .glyphicon, [class^=\"fa-\"], [class*=\" fa-\"], \na.btn-xs, .table td a, th a, .btn-default {\n    display: none !important;\n    visibility: hidden !important;\n    opacity: 0 !important;\n}\n\n/* 5. NUKE ALL TOP NAVIGATION AND HEADERS COMPLETELY */\nnav, .navbar, .navbar-header, .navbar-static-top, .navbar-default,\n#sidebar-wrapper, .header, #header, footer, .footer, h1, .page-header {\n    display: none !important;\n    visibility: hidden !important;\n    height: 0px !important;\n    margin: 0px !important;\n    padding: 0px !important;\n}\n\n/* 6. Push remaining bracket blocks to the very top edge of the window */\n#page-wrapper, .container-fluid, .row {\n    padding-top: 0px !important;\n    margin-top: 0px !important;\n    top: 0px !important;\n}"
             },
             "mixers": 255,
@@ -17435,7 +17435,7 @@
                     {
                         "name": "CamLink HDMI 2",
                         "source_uuid": "844f5d4b-caa5-4240-9d34-fb5cdb29e12e",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -19034,7 +19034,14 @@
         {
             "monitor": 2,
             "type": 3,
-            "geometry": "AdnQywADAAD///iF///7Uf////T////4AAAPAAAAAAAAABZ/AAAEnAAAAAIABAAAB4D///h9///7Uf////wAAAAA",
+            "geometry": "AdnQywADAAD///iF///7UP////T////3AAAPAAAAAAAAABZ/AAAEnAAAAAIABAAAB4D///h9///7UP////z/////",
+            "alwaysOnTopOverridden": false
+        },
+        {
+            "name": "CameraPreview",
+            "monitor": 3,
+            "type": 1,
+            "geometry": "AdnQywADAAD///EIAAAAAP//+HcAAASn///xAAAAAAD///h/AAAErwAAAAMABAAAB4D///EAAAAAAP//+H8AAASv",
             "alwaysOnTopOverridden": false
         }
     ],
