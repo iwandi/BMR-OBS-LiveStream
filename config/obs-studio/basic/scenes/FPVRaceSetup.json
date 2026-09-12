@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Source Setup",
-    "current_program_scene": "Pre-Race",
+    "current_scene": "Cam 12",
+    "current_program_scene": "Post-Stream",
     "scene_order": [
         {
             "name": "Pre-Stream"
@@ -183,6 +183,27 @@
         },
         {
             "name": "Cam 09"
+        },
+        {
+            "name": "Cam 10"
+        },
+        {
+            "name": "Cam 11"
+        },
+        {
+            "name": "Cam 12"
+        },
+        {
+            "name": "Cam 13"
+        },
+        {
+            "name": "Cam 14"
+        },
+        {
+            "name": "Cam 15"
+        },
+        {
+            "name": "Cam 16"
         },
         {
             "name": "CameraSelect"
@@ -671,14 +692,14 @@
             "settings": {
                 "hw_decode": false,
                 "input_format": "rtsp_transport=tcp",
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
                 "close_when_inactive": false,
                 "seekable": false,
+                "input": "rtsp://admin:123456@192.168.10.51:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.51:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -831,7 +852,7 @@
                         "source_uuid": "80d8cdaa-3add-4459-b0c8-9afff182c049",
                         "visible": true,
                         "locked": false,
-                        "rot": 0.0,
+                        "rot": 6.350334167480469,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -847,12 +868,12 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": -12.0,
+                            "y": -217.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
+                            "x": -1.7999999523162842,
+                            "y": -1.4018518924713135
                         },
                         "scale": {
                             "x": 1.0,
@@ -863,12 +884,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 1920.0,
-                            "y": 1080.0
+                            "x": 2288.0,
+                            "y": 1287.0
                         },
                         "bounds_rel": {
-                            "x": 3.555555582046509,
-                            "y": 2.0
+                            "x": 4.237037181854248,
+                            "y": 2.383333444595337
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -1032,13 +1053,13 @@
             "settings": {
                 "hw_decode": false,
                 "input_format": "",
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
                 "seekable": false,
+                "input": "rtsp://admin:123456@192.168.10.52:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.52:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -1563,12 +1584,12 @@
             "settings": {
                 "input_format": "rtsp_transport=udp fflags=nobuffer flags=low_delay reorder_queue_size=0 max_delay=0 analyzeduration=100000 probesize=100000",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.53:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.53:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -2207,12 +2228,12 @@
             "settings": {
                 "input_format": "rtsp_transport=udp fflags=nobuffer flags=low_delay reorder_queue_size=0 max_delay=0 analyzeduration=100000 probesize=100000",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.54:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.54:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -2623,12 +2644,12 @@
             "settings": {
                 "input_format": "",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.55:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.55:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -2982,12 +3003,12 @@
             "settings": {
                 "input_format": "",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.56:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.56:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -3341,12 +3362,12 @@
             "settings": {
                 "input_format": "",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.57:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.57:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -3700,12 +3721,12 @@
             "settings": {
                 "input_format": "",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.58:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.58:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -4059,12 +4080,12 @@
             "settings": {
                 "input_format": "",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.59:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.59:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -4099,9 +4120,394 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 9,
+                "id_counter": 17,
                 "custom_size": false,
                 "items": [
+                    {
+                        "name": "Cam 16",
+                        "source_uuid": "0854a6a9-7049-4521-9569-e454134fc8f4",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 17,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 15",
+                        "source_uuid": "c21cd5c3-c9d0-4fbf-ae92-ae87e95606c9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 15,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 14",
+                        "source_uuid": "e04c5bda-a2ad-4656-942c-b58118b56517",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 14,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 480.0,
+                            "y": 1080.0
+                        },
+                        "pos_rel": {
+                            "x": -0.8888888955116272,
+                            "y": 1.0
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 13",
+                        "source_uuid": "9983a889-31ae-4ca5-9541-2b92ef4e0e58",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 1080.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": 1.0
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 12",
+                        "source_uuid": "1b9a64fd-a695-4bd2-bb38-9a3de0205658",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 12,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1440.0,
+                            "y": 720.0
+                        },
+                        "pos_rel": {
+                            "x": 0.8888888955116272,
+                            "y": 0.3333333730697632
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 11",
+                        "source_uuid": "d5b1723a-7b4e-44a1-a0ae-dbfc7a0a33d8",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 11,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 960.0,
+                            "y": 720.0
+                        },
+                        "pos_rel": {
+                            "x": 0.0,
+                            "y": 0.3333333730697632
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 10",
+                        "source_uuid": "310fb19f-9cc7-45a9-a767-f6203651776b",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 10,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 480.0,
+                            "y": 720.0
+                        },
+                        "pos_rel": {
+                            "x": -0.8888888955116272,
+                            "y": 0.3333333730697632
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.3333333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
                     {
                         "name": "Cam 09",
                         "source_uuid": "1f78622e-4d4b-40b7-b26d-a2d8cb3b945c",
@@ -4123,19 +4529,19 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1280.0,
+                            "x": 0.0,
                             "y": 720.0
                         },
                         "pos_rel": {
-                            "x": 0.5925925970077515,
+                            "x": -1.7777777910232544,
                             "y": 0.3333333730697632
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4178,19 +4584,19 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
-                            "y": 720.0
+                            "x": 1440.0,
+                            "y": 360.0
                         },
                         "pos_rel": {
-                            "x": -0.5925925970077515,
-                            "y": 0.3333333730697632
+                            "x": 0.8888888955116272,
+                            "y": -0.3333333134651184
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4233,19 +4639,19 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 720.0
+                            "x": 960.0,
+                            "y": 360.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": 0.3333333730697632
+                            "x": 0.0,
+                            "y": -0.3333333134651184
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4288,19 +4694,19 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1280.0,
+                            "x": 480.0,
                             "y": 360.0
                         },
                         "pos_rel": {
-                            "x": 0.5925925970077515,
+                            "x": -0.8888888955116272,
                             "y": -0.3333333134651184
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4343,19 +4749,19 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 0.0,
                             "y": 360.0
                         },
                         "pos_rel": {
-                            "x": -0.5925925970077515,
+                            "x": -1.7777777910232544,
                             "y": -0.3333333134651184
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4398,19 +4804,19 @@
                         "id": 3,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 360.0
+                            "x": 1440.0,
+                            "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -0.3333333134651184
+                            "x": 0.8888888955116272,
+                            "y": -1.0
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4453,19 +4859,19 @@
                         "id": 2,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1280.0,
+                            "x": 960.0,
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": 0.5925925970077515,
+                            "x": 0.0,
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4508,19 +4914,19 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 640.0,
+                            "x": 480.0,
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -0.5925925970077515,
+                            "x": -0.8888888955116272,
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
@@ -4571,20 +4977,20 @@
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "scale_rel": {
-                            "x": 0.3333333432674408,
+                            "x": 0.25,
                             "y": 0.3333333432674408
                         },
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
+                            "x": 3.555555582046509,
+                            "y": 2.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -4629,7 +5035,21 @@
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
                 "libobs.show_scene_item.8": [],
-                "libobs.hide_scene_item.8": []
+                "libobs.hide_scene_item.8": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": [],
+                "libobs.show_scene_item.15": [],
+                "libobs.hide_scene_item.15": [],
+                "libobs.show_scene_item.17": [],
+                "libobs.hide_scene_item.17": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -5549,7 +5969,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 2,
+                "id_counter": 3,
                 "custom_size": false,
                 "items": [
                     {
@@ -6107,13 +6527,13 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 9,
+                "id_counter": 18,
                 "custom_size": false,
                 "items": [
                     {
                         "name": "Cam 01",
                         "source_uuid": "ca3c6a28-ab3e-41dc-bc06-3d8509cb1b65",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6388,7 +6808,7 @@
                     {
                         "name": "Cam 06",
                         "source_uuid": "8b6f2c1f-9b1e-4ba7-8f8d-eb92d1f716db",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6604,6 +7024,391 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 10",
+                        "source_uuid": "310fb19f-9cc7-45a9-a767-f6203651776b",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 12,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 11",
+                        "source_uuid": "d5b1723a-7b4e-44a1-a0ae-dbfc7a0a33d8",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 12",
+                        "source_uuid": "1b9a64fd-a695-4bd2-bb38-9a3de0205658",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 14,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 13",
+                        "source_uuid": "9983a889-31ae-4ca5-9541-2b92ef4e0e58",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 15,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 14",
+                        "source_uuid": "e04c5bda-a2ad-4656-942c-b58118b56517",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 16,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 15",
+                        "source_uuid": "c21cd5c3-c9d0-4fbf-ae92-ae87e95606c9",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 17,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 16",
+                        "source_uuid": "0854a6a9-7049-4521-9569-e454134fc8f4",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 18,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -6637,7 +7442,21 @@
                 "libobs.show_scene_item.7": [],
                 "libobs.hide_scene_item.7": [],
                 "libobs.show_scene_item.8": [],
-                "libobs.hide_scene_item.8": []
+                "libobs.hide_scene_item.8": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": [],
+                "libobs.show_scene_item.15": [],
+                "libobs.hide_scene_item.15": [],
+                "libobs.show_scene_item.16": [],
+                "libobs.hide_scene_item.16": [],
+                "libobs.show_scene_item.17": [],
+                "libobs.hide_scene_item.17": [],
+                "libobs.show_scene_item.18": [],
+                "libobs.hide_scene_item.18": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -9422,10 +10241,10 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.3": [],
-                "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -9625,10 +10444,10 @@
                 "OBSBasic.SelectScene": [],
                 "libobs.show_scene_item.1": [],
                 "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": []
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -9826,12 +10645,12 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": []
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10029,12 +10848,12 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.4": [],
-                "libobs.hide_scene_item.4": []
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10232,12 +11051,12 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10435,12 +11254,12 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10638,12 +11457,12 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -10841,12 +11660,12 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.3": [],
                 "libobs.hide_scene_item.3": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -11355,7 +12174,7 @@
                     {
                         "name": "VG_ Race - Info",
                         "source_uuid": "c1e63c6e-4f64-44e8-882f-a4a2d2e89410",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11373,20 +12192,20 @@
                         "id": 9,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1284.0,
-                            "y": 726.5
+                            "x": -1.0,
+                            "y": -1.0
                         },
                         "pos_rel": {
-                            "x": 0.6001372337341309,
-                            "y": 0.34567904472351074
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
                         },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 0.0,
@@ -11410,7 +12229,7 @@
                     {
                         "name": "VG_ FPV 2-4",
                         "source_uuid": "f55726a0-062a-4ef2-8c81-fedf22edbb0a",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11428,20 +12247,20 @@
                         "id": 8,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 646.0,
-                            "y": 726.5
+                            "x": -1.0,
+                            "y": -1.0
                         },
                         "pos_rel": {
-                            "x": -0.5816187262535095,
-                            "y": 0.34567904472351074
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
                         },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -11465,7 +12284,7 @@
                     {
                         "name": "VG_ FPV 2-3",
                         "source_uuid": "7b353ecd-513c-49e3-8e0d-9650d6348e7b",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11483,20 +12302,20 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 8.0,
-                            "y": 726.5
+                            "x": -1.0,
+                            "y": -1.0
                         },
                         "pos_rel": {
-                            "x": -1.7633744478225708,
-                            "y": 0.34567904472351074
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
                         },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -11538,20 +12357,20 @@
                         "id": 2,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1284.0,
-                            "y": 363.5
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "pos_rel": {
-                            "x": 0.6001372337341309,
-                            "y": -0.32716047763824463
+                            "x": -1.7777777910232544,
+                            "y": -1.0
                         },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -11575,7 +12394,7 @@
                     {
                         "name": "VG_ FPV 2-1",
                         "source_uuid": "ff3c8c31-9095-4d62-a158-2412b9948f10",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11593,20 +12412,20 @@
                         "id": 3,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 646.0,
-                            "y": 363.5
+                            "x": -1.0,
+                            "y": -1.0
                         },
                         "pos_rel": {
-                            "x": -0.5816187262535095,
-                            "y": -0.32716047763824463
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
                         },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -11630,7 +12449,7 @@
                     {
                         "name": "VG_ FPV 1-4",
                         "source_uuid": "4efa5d8a-bddb-4465-8115-6cd2ef2a9cf1",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11648,20 +12467,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 8.0,
-                            "y": 363.5
+                            "x": -1.0,
+                            "y": -1.0
                         },
                         "pos_rel": {
-                            "x": -1.7633744478225708,
-                            "y": -0.32716047763824463
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
                         },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -11685,7 +12504,7 @@
                     {
                         "name": "VG_ FPV 1-3",
                         "source_uuid": "111429c4-3756-40fc-a72b-0c4f6096092f",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11703,20 +12522,20 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1284.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": 0.6001372337341309,
+                            "x": -1.0,
                             "y": -1.0
                         },
+                        "pos_rel": {
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
+                        },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -11740,7 +12559,7 @@
                     {
                         "name": "VG_ FPV 1-2",
                         "source_uuid": "d1d54b58-5237-4043-97ef-9b3d33971d1b",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11758,20 +12577,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 646.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -0.5816187262535095,
+                            "x": -1.0,
                             "y": -1.0
                         },
+                        "pos_rel": {
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
+                        },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -11795,7 +12614,7 @@
                     {
                         "name": "VG_ FPV 1-1",
                         "source_uuid": "0026934c-84be-4db5-a658-bc29352f2f0e",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11813,20 +12632,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 8.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7633744478225708,
+                            "x": -1.0,
                             "y": -1.0
                         },
+                        "pos_rel": {
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
+                        },
                         "scale": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_rel": {
-                            "x": 0.327160507440567,
-                            "y": 0.327160507440567
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -12560,7 +13379,7 @@
                     {
                         "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Gnizdoteam_01.png",
                         "uuid": "6a75f3fc-d8c2-44a5-b4d8-b35549a7ecad",
-                        "selected": true,
+                        "selected": false,
                         "hidden": false
                     },
                     {
@@ -12602,6 +13421,72 @@
                     {
                         "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Organizer_Aircrasher.png",
                         "uuid": "858e9c98-c51c-4411-85c7-eaa7af08d0e2",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor_Medium_vci_500w.png",
+                        "uuid": "bb8d9e9b-5759-44cd-9bee-5c032fc3dcc3",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Maxkgo.png",
+                        "uuid": "d8d0f2e9-1364-425b-9db9-979b4ebc0b9d",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/t-hobby.png",
+                        "uuid": "eed03416-cd46-4d76-8fe2-88389e0a4332",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Rotormaniacs Banner.png",
+                        "uuid": "7ecd5f4e-98b8-41ce-8ecd-472343548dd4",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/BetaFPV.png",
+                        "uuid": "f6d9104b-bdb9-4e72-8e7f-a179af2675af",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor_big_radiomaster_500w.png",
+                        "uuid": "be7a518a-6136-42ef-970a-3a5f1223b0c4",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Sponsor_big_gemfan_500w.png",
+                        "uuid": "b3120237-b9b4-44a2-aec1-6f38399625ea",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/AMDC.png",
+                        "uuid": "4d8e56ce-827a-4cbb-ab9f-ecb4cdbe3e63",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/Velocidrone.png",
+                        "uuid": "85881789-464e-41c8-adf2-252ba1df0a18",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/DD_logo 2.png",
+                        "uuid": "67f435b4-8917-4a69-ae12-e5ab1ba54166",
+                        "selected": false,
+                        "hidden": false
+                    },
+                    {
+                        "value": "C:/RC/BMR-OBS-LiveStream/media/logos/FoxeerLogo (2).png",
+                        "uuid": "8478d327-a51c-4e70-a18b-045b57bd8755",
                         "selected": false,
                         "hidden": false
                     }
@@ -12713,7 +13598,8 @@
             "versioned_id": "dshow_input",
             "settings": {
                 "video_device_id": "Cam Link Pro HDMI-1 / Multiview:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03401000226}",
-                "last_video_device_id": "Cam Link Pro HDMI-1 / Multiview:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03401000226}"
+                "last_video_device_id": "Cam Link Pro HDMI-1 / Multiview:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03401000226}",
+                "active": true
             },
             "mixers": 255,
             "sync": 0,
@@ -12841,7 +13727,8 @@
             "versioned_id": "dshow_input",
             "settings": {
                 "video_device_id": "Cam Link Pro HDMI-4:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03404000226}",
-                "last_video_device_id": "Cam Link Pro HDMI-4:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03404000226}"
+                "last_video_device_id": "Cam Link Pro HDMI-4:\\\\?\\pci#22ven_12ab&dev_0710&subsys_00111cfa&rev_00#226&17df8332&0&0010000a#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{6f814be9-9af6-43cf-9249-c03404000226}",
+                "active": true
             },
             "mixers": 255,
             "sync": 0,
@@ -12872,7 +13759,7 @@
             "id": "wasapi_input_capture",
             "versioned_id": "wasapi_input_capture",
             "settings": {
-                "device_id": "{0.0.1.00000000}.{370acf5f-ea19-4ab7-858d-24c831e83c7e}"
+                "device_id": "{0.0.1.00000000}.{c8a74bff-e641-47fa-a0eb-b939b8d2c288}"
             },
             "mixers": 255,
             "sync": 0,
@@ -12903,9 +13790,14 @@
             "id": "dshow_input",
             "versioned_id": "dshow_input",
             "settings": {
-                "video_device_id": "UVC Camera:\\\\?\\usb#22vid_2ca3&pid_0021&mi_00#229&d27b5f4&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "last_video_device_id": "UVC Camera:\\\\?\\usb#22vid_2ca3&pid_0021&mi_00#229&d27b5f4&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "active": true
+                "video_device_id": "Logitech BRIO:\\\\?\\usb#22vid_046d&pid_085e&mi_00#229&23350b4&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "last_video_device_id": "Logitech BRIO:\\\\?\\usb#22vid_046d&pid_085e&mi_00#229&23350b4&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "active": true,
+                "res_type": 1,
+                "resolution": "3840x2160",
+                "last_resolution": "3840x2160",
+                "frame_interval": 0,
+                "video_format": 400
             },
             "mixers": 255,
             "sync": 0,
@@ -14884,7 +15776,7 @@
                     {
                         "name": "CamLink HDMI 2",
                         "source_uuid": "844f5d4b-caa5-4240-9d34-fb5cdb29e12e",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -14939,7 +15831,7 @@
                     {
                         "name": "CamLink HDMI 3",
                         "source_uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -14994,7 +15886,7 @@
                     {
                         "name": "CamLink HDMI 4",
                         "source_uuid": "a4c3c242-c79d-4e71-84e4-e358052499d5",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -15159,7 +16051,7 @@
                     {
                         "name": "Web Cam",
                         "source_uuid": "a15c9588-40a9-4ad5-a38f-5f5b321ddc0f",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -15248,12 +16140,12 @@
             "settings": {
                 "input_format": "",
                 "hw_decode": false,
-                "ffmpeg_options": "rtsp_transport=udp fflags=nobuffer flags=low_delay analyzeduration=0 probesize=100000",
+                "ffmpeg_options": "rtsp_transport=tcp",
+                "input": "rtsp://admin:123456@192.168.10.60:554/stream1",
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2,
-                "input": "rtsp://admin:123456@192.168.10.60:554/stream1"
+                "reconnect_delay_sec": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -17612,14 +18504,14 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": [],
-                "libobs.show_scene_item.10": [],
-                "libobs.hide_scene_item.10": [],
-                "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": [],
-                "libobs.show_scene_item.12": [],
-                "libobs.hide_scene_item.12": [],
+                "libobs.show_scene_item.22": [],
+                "libobs.hide_scene_item.22": [],
+                "libobs.show_scene_item.21": [],
+                "libobs.hide_scene_item.21": [],
+                "libobs.show_scene_item.20": [],
+                "libobs.hide_scene_item.20": [],
+                "libobs.show_scene_item.19": [],
+                "libobs.hide_scene_item.19": [],
                 "libobs.show_scene_item.14": [],
                 "libobs.hide_scene_item.14": [],
                 "libobs.show_scene_item.15": [],
@@ -17630,14 +18522,6 @@
                 "libobs.hide_scene_item.17": [],
                 "libobs.show_scene_item.18": [],
                 "libobs.hide_scene_item.18": [],
-                "libobs.show_scene_item.19": [],
-                "libobs.hide_scene_item.19": [],
-                "libobs.show_scene_item.20": [],
-                "libobs.hide_scene_item.20": [],
-                "libobs.show_scene_item.21": [],
-                "libobs.hide_scene_item.21": [],
-                "libobs.show_scene_item.22": [],
-                "libobs.hide_scene_item.22": [],
                 "libobs.show_scene_item.23": [],
                 "libobs.hide_scene_item.23": [],
                 "libobs.show_scene_item.24": [],
@@ -17651,7 +18535,15 @@
                 "libobs.show_scene_item.28": [],
                 "libobs.hide_scene_item.28": [],
                 "libobs.show_scene_item.29": [],
-                "libobs.hide_scene_item.29": []
+                "libobs.hide_scene_item.29": [],
+                "libobs.show_scene_item.9": [],
+                "libobs.hide_scene_item.9": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.12": [],
+                "libobs.hide_scene_item.12": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -17666,9 +18558,9 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
+                "color": 4294967040,
                 "width": 640,
-                "height": 360,
-                "color": 4294967040
+                "height": 360
             },
             "mixers": 0,
             "sync": 0,
@@ -17694,9 +18586,9 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
+                "color": 4294902015,
                 "width": 640,
-                "height": 360,
-                "color": 4294902015
+                "height": 360
             },
             "mixers": 0,
             "sync": 0,
@@ -17722,9 +18614,9 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
+                "color": 4294901930,
                 "width": 640,
-                "height": 360,
-                "color": 4294901930
+                "height": 360
             },
             "mixers": 0,
             "sync": 0,
@@ -17750,9 +18642,9 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
+                "color": 4278233600,
                 "width": 640,
-                "height": 360,
-                "color": 4278233600
+                "height": 360
             },
             "mixers": 0,
             "sync": 0,
@@ -18137,6 +19029,397 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 10",
+            "uuid": "310fb19f-9cc7-45a9-a767-f6203651776b",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 1,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "CamLink HDMI 3",
+                        "source_uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 11",
+            "uuid": "d5b1723a-7b4e-44a1-a0ae-dbfc7a0a33d8",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 1,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "CamLink HDMI 4",
+                        "source_uuid": "a4c3c242-c79d-4e71-84e4-e358052499d5",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 12",
+            "uuid": "1b9a64fd-a695-4bd2-bb38-9a3de0205658",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 1,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "Web Cam",
+                        "source_uuid": "a15c9588-40a9-4ad5-a38f-5f5b321ddc0f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 3.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 3,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -61.5,
+                            "y": -96.5
+                        },
+                        "pos_rel": {
+                            "x": -1.8916666507720947,
+                            "y": -1.1787036657333374
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 2105.0,
+                            "y": 1184.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.8981480598449707,
+                            "y": 2.1925926208496094
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 13",
+            "uuid": "9983a889-31ae-4ca5-9541-2b92ef4e0e58",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": false,
+                "items": []
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 14",
+            "uuid": "e04c5bda-a2ad-4656-942c-b58118b56517",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": false,
+                "items": []
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 15",
+            "uuid": "c21cd5c3-c9d0-4fbf-ae92-ae87e95606c9",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": false,
+                "items": []
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 16",
+            "uuid": "0854a6a9-7049-4521-9569-e454134fc8f4",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": false,
+                "items": []
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         }
     ],
@@ -18759,7 +20042,7 @@
                     {
                         "name": "CamLink HDMI 2",
                         "source_uuid": "844f5d4b-caa5-4240-9d34-fb5cdb29e12e",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -18814,7 +20097,7 @@
                     {
                         "name": "CamLink HDMI 3",
                         "source_uuid": "7e7115fc-759b-4820-aa7f-2687977a37db",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -18869,7 +20152,7 @@
                     {
                         "name": "CamLink HDMI 4",
                         "source_uuid": "a4c3c242-c79d-4e71-84e4-e358052499d5",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -19032,16 +20315,23 @@
     "transitions": [],
     "saved_projectors": [
         {
-            "monitor": 2,
+            "monitor": 3,
             "type": 3,
-            "geometry": "AdnQywADAAD///iF///7UP////T////3AAAPAAAAAAAAABZ/AAAEnAAAAAIABAAAB4D///h9///7UP////z/////",
+            "geometry": "AdnQywADAAD///iN///7yP////z////3///4hf//+8gAAAAE/////wAAAAMABAAAB4D///iF///7yAAAAAT/////",
             "alwaysOnTopOverridden": false
         },
         {
             "name": "CameraPreview",
-            "monitor": 3,
+            "monitor": 2,
             "type": 1,
-            "geometry": "AdnQywADAAD///EIAAAAAP//+HcAAASn///xAAAAAAD///h/AAAErwAAAAMABAAAB4D///EAAAAAAP//+H8AAASv",
+            "geometry": "AdnQywADAAD///EIAAAAAP//+HcAAASn///xAAAAAAD///h/AAAErwAAAAIABAAAB4D///EAAAAAAP//+H8AAASv",
+            "alwaysOnTopOverridden": false
+        },
+        {
+            "name": "FPV Capture 8 in 1",
+            "monitor": -1,
+            "type": 1,
+            "geometry": "AdnQywADAAAAAAAA////+AAAB38AAAR/AAADTQAAAdcAAAUsAAAC5AAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAR/",
             "alwaysOnTopOverridden": false
         }
     ],
@@ -19132,6 +20422,48 @@
                         {
                             "control": true,
                             "key": "OBS_KEY_3"
+                        }
+                    ],
+                    "camera10": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_0"
+                        }
+                    ],
+                    "camera11": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_Q"
+                        }
+                    ],
+                    "camera12": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_W"
+                        }
+                    ],
+                    "camera13": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_E"
+                        }
+                    ],
+                    "camera14": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_R"
+                        }
+                    ],
+                    "camera15": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_T"
+                        }
+                    ],
+                    "camera16": [
+                        {
+                            "control": true,
+                            "key": "OBS_KEY_Z"
                         }
                     ]
                 }

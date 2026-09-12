@@ -1,9 +1,11 @@
 obs = obslua
 
 scene_name = "CameraSelect"
-camera_sources = {
-    "Cam 01","Cam 02","Cam 03","Cam 04","Cam 05","Cam 06","Cam 07","Cam 08","Cam 09"
-}
+camera_count = 16
+camera_sources = {}
+for i = 1, camera_count do
+    camera_sources[i] = string.format("Cam %02d", i)
+end
 
 hotkey_objects = {}
 
@@ -42,31 +44,17 @@ function restore_all_cameras()
     end
 end
 
--- Individual hotkey functions
-function switch_camera_1() switch_camera("Cam 01") end
-function switch_camera_2() switch_camera("Cam 02") end
-function switch_camera_3() switch_camera("Cam 03") end
-function switch_camera_4() switch_camera("Cam 04") end
-function switch_camera_5() switch_camera("Cam 05") end
-function switch_camera_6() switch_camera("Cam 06") end
-function switch_camera_7() switch_camera("Cam 07") end
-function switch_camera_8() switch_camera("Cam 08") end
-function switch_camera_9() switch_camera("Cam 09") end
-
 -- Register hotkeys
 function script_load(settings)
-    local hotkeys = {
-        {id = "camera1", func = switch_camera_1},
-        {id = "camera2", func = switch_camera_2},
-        {id = "camera3", func = switch_camera_3},
-        {id = "camera4", func = switch_camera_4},
-        {id = "camera5", func = switch_camera_5},
-        {id = "camera6", func = switch_camera_6},
-        {id = "camera7", func = switch_camera_7},
-        {id = "camera8", func = switch_camera_8},
-        {id = "camera9", func = switch_camera_9},
-        {id = "restore_all", func = restore_all_cameras}
-    }
+    local hotkeys = {}
+    for i = 1, camera_count do
+        local cam_name = camera_sources[i]
+        hotkeys[i] = {
+            id = "camera"..i,
+            func = function() switch_camera(cam_name) end
+        }
+    end
+    hotkeys[#hotkeys + 1] = {id = "restore_all", func = restore_all_cameras}
 
     for _, hk in ipairs(hotkeys) do
         local hotkey_obj = obs.obs_hotkey_register_frontend(hk.id, "Switch "..hk.id, hk.func)
