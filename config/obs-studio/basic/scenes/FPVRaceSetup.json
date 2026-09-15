@@ -61,8 +61,8 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Cam 12",
-    "current_program_scene": "Post-Stream",
+    "current_scene": "Clean",
+    "current_program_scene": "Clean",
     "scene_order": [
         {
             "name": "Pre-Stream"
@@ -74,10 +74,10 @@
             "name": "Tree"
         },
         {
-            "name": "Race"
+            "name": "Race_"
         },
         {
-            "name": "Race Mains"
+            "name": "Race"
         },
         {
             "name": "Background"
@@ -102,6 +102,9 @@
         },
         {
             "name": "Clean"
+        },
+        {
+            "name": "Commertials"
         },
         {
             "name": "Cam only"
@@ -5298,7 +5301,7 @@
         },
         {
             "prev_ver": 520159234,
-            "name": "Race",
+            "name": "Race_",
             "uuid": "54ed5013-5f4d-4b8a-9c2d-10f51d44dc74",
             "id": "scene",
             "versioned_id": "scene",
@@ -5681,7 +5684,7 @@
                     {
                         "name": "Overlay - PostRace",
                         "source_uuid": "347bad00-6c3f-4597-b016-3290cef7a637",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5736,7 +5739,7 @@
                     {
                         "name": "Overlay - PostRaceHeat",
                         "source_uuid": "f1ce2cb4-515d-4faf-bcda-de3ca02fb195",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6808,7 +6811,7 @@
                     {
                         "name": "Cam 06",
                         "source_uuid": "8b6f2c1f-9b1e-4ba7-8f8d-eb92d1f716db",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -7083,7 +7086,7 @@
                     {
                         "name": "Cam 11",
                         "source_uuid": "d5b1723a-7b4e-44a1-a0ae-dbfc7a0a33d8",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -12339,7 +12342,7 @@
                     {
                         "name": "VG_ FPV 2-2",
                         "source_uuid": "01be96a6-baf9-4e15-a2bb-44bd48d4dc52",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -12357,20 +12360,20 @@
                         "id": 2,
                         "group_item_backup": false,
                         "pos": {
+                            "x": -1.0,
+                            "y": -1.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7796295881271362,
+                            "y": -1.0018517971038818
+                        },
+                        "scale": {
                             "x": 0.0,
                             "y": 0.0
                         },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1.0,
@@ -12449,7 +12452,7 @@
                     {
                         "name": "VG_ FPV 1-4",
                         "source_uuid": "4efa5d8a-bddb-4465-8115-6cd2ef2a9cf1",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -12467,20 +12470,20 @@
                         "id": 4,
                         "group_item_backup": false,
                         "pos": {
-                            "x": -1.0,
-                            "y": -1.0
+                            "x": 965.0,
+                            "y": 545.0
                         },
                         "pos_rel": {
-                            "x": -1.7796295881271362,
-                            "y": -1.0018517971038818
+                            "x": 0.009259259328246117,
+                            "y": 0.009259223937988281
                         },
                         "scale": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "scale_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "bounds": {
                             "x": 1.0,
@@ -12504,7 +12507,7 @@
                     {
                         "name": "VG_ FPV 1-3",
                         "source_uuid": "111429c4-3756-40fc-a72b-0c4f6096092f",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -12522,20 +12525,20 @@
                         "id": 5,
                         "group_item_backup": false,
                         "pos": {
-                            "x": -1.0,
-                            "y": -1.0
+                            "x": 4.0,
+                            "y": 545.0
                         },
                         "pos_rel": {
-                            "x": -1.7796295881271362,
-                            "y": -1.0018517971038818
+                            "x": -1.7705761194229126,
+                            "y": 0.009259223937988281
                         },
                         "scale": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "scale_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "bounds": {
                             "x": 1.0,
@@ -12559,7 +12562,7 @@
                     {
                         "name": "VG_ FPV 1-2",
                         "source_uuid": "d1d54b58-5237-4043-97ef-9b3d33971d1b",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -12577,20 +12580,20 @@
                         "id": 6,
                         "group_item_backup": false,
                         "pos": {
-                            "x": -1.0,
-                            "y": -1.0
+                            "x": 965.0,
+                            "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.7796295881271362,
-                            "y": -1.0018517971038818
+                            "x": 0.009259259328246117,
+                            "y": -1.0
                         },
                         "scale": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "scale_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "bounds": {
                             "x": 1.0,
@@ -12614,7 +12617,7 @@
                     {
                         "name": "VG_ FPV 1-1",
                         "source_uuid": "0026934c-84be-4db5-a658-bc29352f2f0e",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -12632,20 +12635,20 @@
                         "id": 7,
                         "group_item_backup": false,
                         "pos": {
-                            "x": -1.0,
-                            "y": -1.0
+                            "x": 4.0,
+                            "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.7796295881271362,
-                            "y": -1.0018517971038818
+                            "x": -1.7705761194229126,
+                            "y": -1.0
                         },
                         "scale": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "scale_rel": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 0.49537035822868347,
+                            "y": 0.49537035822868347
                         },
                         "bounds": {
                             "x": 1.0,
@@ -12894,7 +12897,7 @@
                 "url": "http://localhost/PreStream.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13076,7 +13079,7 @@
                 "url": "http://localhost/PostStream.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "shutdown": false,
                 "restart_when_active": true
             },
@@ -13113,7 +13116,7 @@
                 "url": "http://localhost/Info.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13149,7 +13152,7 @@
                 "url": "http://localhost/PreRaceMini.html",
                 "width": 1920,
                 "height": 1079,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13185,7 +13188,7 @@
                 "url": "http://localhost/PostRace.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13221,7 +13224,7 @@
                 "url": "http://localhost/RaceLivePosEst.html",
                 "width": 1980,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "shutdown": false,
                 "restart_when_active": true
             },
@@ -13258,7 +13261,7 @@
                 "url": "http://localhost/RaceHeader.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13294,7 +13297,7 @@
                 "url": "http://localhost/Clean.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13330,7 +13333,7 @@
                 "url": "http://localhost/RaceHeat.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13527,7 +13530,7 @@
                 "url": "http://localhost/RaceOverlay.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 31,
+                "fps": 30,
                 "restart_when_active": true
             },
             "mixers": 255,
@@ -13563,7 +13566,7 @@
                 "url": "http://localhost/PostRaceHeat.html",
                 "width": 1920,
                 "height": 1080,
-                "fps": 30,
+                "fps": 31,
                 "shutdown": true,
                 "restart_when_active": true
             },
@@ -13750,7 +13753,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 520159234,
+                    "name": "Apply LUT",
+                    "uuid": "774e2816-2d04-4a54-bc2c-591520e21523",
+                    "id": "clut_filter",
+                    "versioned_id": "clut_filter",
+                    "settings": {
+                        "image_path": "C:/RC/BMR-OBS-LiveStream/media/LUT_pack/Webcam Presets/webcam_preset_1.png"
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 520159234,
@@ -13759,12 +13790,12 @@
             "id": "wasapi_input_capture",
             "versioned_id": "wasapi_input_capture",
             "settings": {
-                "device_id": "{0.0.1.00000000}.{c8a74bff-e641-47fa-a0eb-b939b8d2c288}"
+                "device_id": "{0.0.1.00000000}.{b7e34f5c-952f-4e7b-a13b-dcb52286d249}"
             },
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 1.0,
+            "volume": 0.7141289114952087,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -13794,8 +13825,8 @@
                 "last_video_device_id": "Logitech BRIO:\\\\?\\usb#22vid_046d&pid_085e&mi_00#229&23350b4&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "active": true,
                 "res_type": 1,
-                "resolution": "3840x2160",
-                "last_resolution": "3840x2160",
+                "resolution": "1920x1080",
+                "last_resolution": "1920x1080",
                 "frame_interval": 0,
                 "video_format": 400
             },
@@ -15030,11 +15061,11 @@
                         "id": 2,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
+                            "x": 151.0,
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
+                            "x": -1.4981482028961182,
                             "y": -1.0
                         },
                         "scale": {
@@ -15046,12 +15077,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 1920.0,
-                            "y": 1080.0
+                            "x": 1618.0,
+                            "y": 1397.0
                         },
                         "bounds_rel": {
-                            "x": 3.555555582046509,
-                            "y": 2.0
+                            "x": 2.9962964057922363,
+                            "y": 2.5870370864868164
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -15097,11 +15128,11 @@
             "id": "browser_source",
             "versioned_id": "browser_source",
             "settings": {
-                "url": "https://aircrasher.livefpv.com/results/?p=view_brackets&round_id=1537047&class_id=13762&fullscreen",
+                "url": "https://aircrasher.livefpv.com/results/?p=view_brackets&round_id=1583492&class_id=13762&fullscreen",
                 "width": 2200,
                 "height": 1900,
-                "fps": 31,
-                "css": "/* 1. Make the master background completely transparent */\nhtml, body, #wrapper, .container, .main-content, #page-wrapper, \nbody.fullscreen, div.panel, .panel-default, .panel-body, .table-responsive {\n    background: transparent !important;\n    background-color: transparent !important;\n    border: none !important;\n}\n\n/* 2. Clear out standard table background fills */\ntable, tr, td, th, .list-group-item {\n    background: transparent;\n    background-color: transparent;\n    border-color: rgba(255, 255, 255, 0.15) !important;\n}\n\n/* 3. KEEP THE RACE BLOCK STATUS COLORS ACTIVE */\n.success, tr.success, td.success, .bg-success {\n    background-color: #dff0d8 !important; /* Green */\n    background: #dff0d8 !important;\n}\n.warning, tr.warning, td.warning, .bg-warning {\n    background-color: #fcf8e3 !important; /* Yellow */\n    background: #fcf8e3 !important;\n}\n.danger, tr.danger, td.danger, .bg-danger {\n    background-color: #f2dede !important; /* Red */\n    background: #f2dede !important;\n}\n.info, tr.info, td.info, .bg-info {\n    background-color: #d9edf7 !important; /* Blue */\n    background: #d9edf7 !important;\n}\n\n/* 4. HIDE ICONS AND BUTTON TEXT INSIDE BRACKETS (e.g., \"View Results/Video\") */\n.fa, .glyphicon, [class^=\"fa-\"], [class*=\" fa-\"], \na.btn-xs, .table td a, th a, .btn-default {\n    display: none !important;\n    visibility: hidden !important;\n    opacity: 0 !important;\n}\n\n/* 5. NUKE ALL TOP NAVIGATION AND HEADERS COMPLETELY */\nnav, .navbar, .navbar-header, .navbar-static-top, .navbar-default,\n#sidebar-wrapper, .header, #header, footer, .footer, h1, .page-header {\n    display: none !important;\n    visibility: hidden !important;\n    height: 0px !important;\n    margin: 0px !important;\n    padding: 0px !important;\n}\n\n/* 6. Push remaining bracket blocks to the very top edge of the window */\n#page-wrapper, .container-fluid, .row {\n    padding-top: 0px !important;\n    margin-top: 0px !important;\n    top: 0px !important;\n}"
+                "fps": 30,
+                "css": ":root{\n  --mgpRed:#d81f2a; --euroBlue:#2277e0; --euroYellow:#ffd617;\n  --fg:#ffffff;\n  --panelBg:linear-gradient(158deg, rgba(13,19,31,.92) 0%, rgba(20,28,44,.86) 100%);\n  --panelBorder:1px solid rgba(255,255,255,.14);\n  --line:rgba(255,255,255,.28);\n}\nhtml,body{background:transparent!important;}\nbody{\n  color:var(--fg)!important;\n  font-family:'Saira Extra Condensed','Saira Condensed',sans-serif!important;\n  letter-spacing:.3px;\n}\n\n/* ---- hide zoom controls + page title ---- */\nbody > div.p-3{display:none!important;}\nbody > div.bg-dark{display:none!important;}\n\n/* ---- remove full-cell colour wash ---- */\ntable.bracket td{background:transparent!important; background-color:transparent!important;}\n\n/* ---- connector lines ---- */\n.bracket_box_line_in,.bracket_box_line_out,.bracket_box_line_down_left{border-color:var(--line)!important;}\n\n/* ---- box = glass panel, accent strip by bracket type ---- */\n.bracket_box .border-dark{\n  border:var(--panelBorder)!important; border-radius:6px; overflow:hidden;\n  background:var(--panelBg); box-shadow:0 6px 16px rgba(0,0,0,.5); position:relative;\n}\n.bracket_box .border-dark::before{\n  content:''; position:absolute; top:0; left:0; right:0; height:3px; z-index:2;\n  background:var(--euroBlue);                    /* Winners */\n}\ntd.bg-danger  .bracket_box .border-dark::before{background:var(--mgpRed);}      /* Losers */\ntd.bg-warning .bracket_box .border-dark::before{background:var(--euroYellow);}  /* Championship */\n\n/* ---- hide the box header (title / race number / results link) ---- */\n.bracket_box .bg-dark{display:none!important;}\n/* ---- hide the channel / frequency badge ---- */\n.fpv_freq{display:none!important;}\n\n/* ---- pilot list: numbered by finishing position ---- */\n.bracket_box .bg-light{\n  background:transparent!important;\n  padding:8px 6px 4px!important;         /* room under the accent strip */\n  counter-reset:pos;\n}\n.bracket_box .bg-light .text-dark{color:var(--fg)!important;}\n.bracket_box .bg-info{\n  background:linear-gradient(158deg, rgba(21,30,48,.9), rgba(28,38,58,.82))!important;\n  color:var(--fg)!important;\n  border:1px solid rgba(255,255,255,.10); border-radius:4px;\n  display:flex; align-items:center; justify-content:flex-start; gap:8px;\n  font-weight:600; margin-bottom:4px!important;\n}\n.bracket_box .bg-info::before{\n  counter-increment:pos; content:counter(pos);\n  font-weight:800; color:var(--euroYellow);\n  min-width:1.1em; text-align:center; opacity:.95;\n}"
             },
             "mixers": 255,
             "sync": 0,
@@ -15941,7 +15972,7 @@
                     {
                         "name": "CamLink HDMI 1",
                         "source_uuid": "3656698d-964d-475d-8da2-848d9046335f",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -16145,7 +16176,8 @@
                 "is_local_file": false,
                 "clear_on_media_end": false,
                 "restart_on_activate": false,
-                "reconnect_delay_sec": 2
+                "reconnect_delay_sec": 2,
+                "seekable": false
             },
             "mixers": 255,
             "sync": 0,
@@ -16954,7 +16986,7 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "Race",
+                        "name": "Race_",
                         "source_uuid": "54ed5013-5f4d-4b8a-9c2d-10f51d44dc74",
                         "visible": true,
                         "locked": false,
@@ -17121,7 +17153,7 @@
         },
         {
             "prev_ver": 520159234,
-            "name": "Race Mains",
+            "name": "Race",
             "uuid": "e725b407-32f4-4fab-971b-46c3a133dc25",
             "id": "scene",
             "versioned_id": "scene",
@@ -19151,12 +19183,12 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": -42.0,
+                            "y": -35.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
+                            "x": -1.855555534362793,
+                            "y": -1.064814805984497
                         },
                         "scale": {
                             "x": 1.0,
@@ -19167,12 +19199,12 @@
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 1920.0,
-                            "y": 1080.0
+                            "x": 2048.0,
+                            "y": 1152.0
                         },
                         "bounds_rel": {
-                            "x": 3.555555582046509,
-                            "y": 2.0
+                            "x": 3.7925925254821777,
+                            "y": 2.133333444595337
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -19224,7 +19256,7 @@
                         "source_uuid": "a15c9588-40a9-4ad5-a38f-5f5b321ddc0f",
                         "visible": true,
                         "locked": false,
-                        "rot": 3.0,
+                        "rot": 1.7999999523162842,
                         "scale_ref": {
                             "x": 1920.0,
                             "y": 1080.0
@@ -19240,12 +19272,12 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": -61.5,
-                            "y": -96.5
+                            "x": -1.5,
+                            "y": -60.5
                         },
                         "pos_rel": {
-                            "x": -1.8916666507720947,
-                            "y": -1.1787036657333374
+                            "x": -1.7805556058883667,
+                            "y": -1.1120370626449585
                         },
                         "scale": {
                             "x": 1.0,
@@ -19420,6 +19452,1310 @@
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Commertials",
+            "uuid": "694c35d2-25c6-4fd1-91d9-b9dab4818250",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 16,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "Background",
+                        "source_uuid": "458890aa-ed68-4fbf-a0b5-c50e721f2ea0",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 14,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Black",
+                        "source_uuid": "61af7c58-0e13-4424-848e-1637bfd217bf",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 15,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "velocidrone-video-logo.mp4",
+                        "source_uuid": "3a7b54fb-70a3-4781-938c-f4cad13973ea",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 11,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "THobbyVideo (1).mp4",
+                        "source_uuid": "43325b70-3846-467c-8539-837900513916",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 10,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "BetaCetusVideo.mp4",
+                        "source_uuid": "585ee392-886e-4026-af05-e59649157aae",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "BetaMarketingVideo.mp4",
+                        "source_uuid": "e6904a97-aa67-49a0-be36-8c3a258dda69",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "CDRA 2027 Commercial.mp4",
+                        "source_uuid": "20a33e9b-0d37-4987-b67e-1a7f2417976b",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 3,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Champs Commercial 1.mp4",
+                        "source_uuid": "ebcceb67-ab45-49bb-b0db-e57b30601efe",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 4,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Champs Commercial 2.mp4",
+                        "source_uuid": "aebc4968-706b-45fc-9e7b-434e3b41f2d3",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "FoxeerVideo (1).mp4",
+                        "source_uuid": "e4baea2a-0d60-40fc-b01f-101e6ec47213",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Generic 2k 30fps.mp4",
+                        "source_uuid": "ec3ce34f-73fc-449c-a627-dda600a823ff",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 7,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Track Presentation.mp4",
+                        "source_uuid": "83749180-464d-4cf3-a695-9e6d66112853",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 13,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Multi GP Final v5 FINAL h264.mp4",
+                        "source_uuid": "5db96bc9-d8ab-4645-8805-6cb74b8ee031",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 8,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Intor final.mp4",
+                        "source_uuid": "c829f5f9-7fb5-4bcb-b131-c73f259bca0d",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 16,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.3": [],
+                "libobs.hide_scene_item.3": [],
+                "libobs.show_scene_item.4": [],
+                "libobs.hide_scene_item.4": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": [],
+                "libobs.show_scene_item.7": [],
+                "libobs.hide_scene_item.7": [],
+                "libobs.show_scene_item.8": [],
+                "libobs.hide_scene_item.8": [],
+                "libobs.show_scene_item.10": [],
+                "libobs.hide_scene_item.10": [],
+                "libobs.show_scene_item.11": [],
+                "libobs.hide_scene_item.11": [],
+                "libobs.show_scene_item.13": [],
+                "libobs.hide_scene_item.13": [],
+                "libobs.show_scene_item.14": [],
+                "libobs.hide_scene_item.14": [],
+                "libobs.show_scene_item.15": [],
+                "libobs.hide_scene_item.15": [],
+                "libobs.show_scene_item.16": [],
+                "libobs.hide_scene_item.16": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "BetaCetusVideo.mp4",
+            "uuid": "585ee392-886e-4026-af05-e59649157aae",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/BetaCetusVideo.mp4",
+                "close_when_inactive": true,
+                "hw_decode": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.26664605736732483,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "BetaMarketingVideo.mp4",
+            "uuid": "e6904a97-aa67-49a0-be36-8c3a258dda69",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/BetaMarketingVideo.mp4",
+                "close_when_inactive": true,
+                "hw_decode": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.19061487913131714,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "CDRA 2027 Commercial.mp4",
+            "uuid": "20a33e9b-0d37-4987-b67e-1a7f2417976b",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/CDRA 2027 Commercial.mp4",
+                "close_when_inactive": true,
+                "hw_decode": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.47744572162628174,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Champs Commercial 1.mp4",
+            "uuid": "ebcceb67-ab45-49bb-b0db-e57b30601efe",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/Champs Commercial 1.mp4",
+                "hw_decode": true,
+                "close_when_inactive": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.42595136165618896,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Champs Commercial 2.mp4",
+            "uuid": "aebc4968-706b-45fc-9e7b-434e3b41f2d3",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/Champs Commercial 2.mp4",
+                "hw_decode": true,
+                "close_when_inactive": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.3555295765399933,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "FoxeerVideo (1).mp4",
+            "uuid": "e4baea2a-0d60-40fc-b01f-101e6ec47213",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/FoxeerVideo (1).mp4",
+                "hw_decode": true,
+                "close_when_inactive": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.44013646245002747,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Generic 2k 30fps.mp4",
+            "uuid": "ec3ce34f-73fc-449c-a627-dda600a823ff",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/Generic 2k 30fps.mp4",
+                "hw_decode": true,
+                "close_when_inactive": true,
+                "looping": false
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Multi GP Final v5 FINAL h264.mp4",
+            "uuid": "5db96bc9-d8ab-4645-8805-6cb74b8ee031",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/Multi GP Final v5 FINAL h264.mp4",
+                "hw_decode": true,
+                "close_when_inactive": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.43279504776000977,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "THobbyVideo (1).mp4",
+            "uuid": "43325b70-3846-467c-8539-837900513916",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/THobbyVideo (1).mp4",
+                "close_when_inactive": true,
+                "hw_decode": true,
+                "looping": false
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.348769873380661,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "velocidrone-video-logo.mp4",
+            "uuid": "3a7b54fb-70a3-4781-938c-f4cad13973ea",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/velocidrone-video-logo.mp4",
+                "close_when_inactive": true,
+                "hw_decode": true,
+                "looping": false,
+                "restart_on_activate": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.7384970188140869,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Track Presentation.mp4",
+            "uuid": "83749180-464d-4cf3-a695-9e6d66112853",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/Track Presentation.mp4",
+                "hw_decode": true,
+                "close_when_inactive": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.016289357095956802,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Black",
+            "uuid": "61af7c58-0e13-4424-848e-1637bfd217bf",
+            "id": "color_source",
+            "versioned_id": "color_source_v3",
+            "settings": {
+                "color": 4278190080
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Intor final.mp4",
+            "uuid": "c829f5f9-7fb5-4bcb-b131-c73f259bca0d",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "C:/RC/BMR-OBS-LiveStream/media/MultiGP Euro Champs 2026/Intor final.mp4",
+                "hw_decode": true,
+                "close_when_inactive": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.34206557273864746,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
             "private_settings": {}
         }
     ],
@@ -20207,7 +21543,7 @@
                     {
                         "name": "CamLink HDMI 1",
                         "source_uuid": "3656698d-964d-475d-8da2-848d9046335f",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -20317,21 +21653,21 @@
         {
             "monitor": 3,
             "type": 3,
-            "geometry": "AdnQywADAAD///iN///7yP////z////3///4hf//+8gAAAAE/////wAAAAMABAAAB4D///iF///7yAAAAAT/////",
-            "alwaysOnTopOverridden": false
-        },
-        {
-            "name": "CameraPreview",
-            "monitor": 2,
-            "type": 1,
-            "geometry": "AdnQywADAAD///EIAAAAAP//+HcAAASn///xAAAAAAD///h/AAAErwAAAAIABAAAB4D///EAAAAAAP//+H8AAASv",
+            "geometry": "AdnQywADAAAAAAAN///7yAAAB3z////3///4hf//+8gAAAAE/////wAAAAEABAAAB4AAAAAF///7yAAAB4T/////",
             "alwaysOnTopOverridden": false
         },
         {
             "name": "FPV Capture 8 in 1",
+            "monitor": 3,
+            "type": 1,
+            "geometry": "AdnQywADAAD///iIAAAAAP////cAAASn///xAAAAAAD///h/AAAErwAAAAIABAAAB4D///iAAAAAAP////8AAASv",
+            "alwaysOnTopOverridden": false
+        },
+        {
+            "name": "CameraPreview",
             "monitor": -1,
             "type": 1,
-            "geometry": "AdnQywADAAAAAAAA////+AAAB38AAAR/AAADTQAAAdcAAAUsAAAC5AAAAAACAAAAB4AAAAAAAAAAFwAAB38AAAR/",
+            "geometry": "AdnQywADAAAAAAeA////+AAADv8AAAR/AAAI9AAAAfcAAArTAAADBAAAAAMCAAAAB4AAAAeAAAAAFwAADv8AAAR/",
             "alwaysOnTopOverridden": false
         }
     ],
