@@ -1,0 +1,15 @@
+[
+    {
+        "display_name": "Downstream Keyer",
+        "enabled": true,
+        "encoders": [],
+        "id": "",
+        "module_name": "downstream-keyer",
+        "outputs": [],
+        "services": [],
+        "sources": [
+            "ouput_source"
+        ],
+        "version": ""
+    }
+]
