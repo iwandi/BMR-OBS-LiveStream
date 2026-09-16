@@ -1,6 +1,24 @@
 # Third-party OBS plugins bundled with this portable install.
 # Each is shipped as a zip in source-bin\ and extracted by unpack.bat.
 
+# ------------------------------------------------------------------
+# Custom OBS Studio build (BMR fork)
+#   source-bin\OBS-Studio-32.2.2-BMR-Fork-x64.zip   (used, see version.txt)
+#   source-bin\OBS-Studio-32.2.2-Windows-x64.zip    (stock 32.2.2, kept for reference)
+#
+# A custom build of OBS Studio 32.2.2 (source: L:\Code\obs-studio,
+# tag 32.2.2, built with VS 2022) replacing the stock binaries. Changes:
+#   - "Reload from Disk" actions: scene right-click + Scenes/Sources dock
+#     toolbar button; Scene Collection > Reload (Collections/All Scenes/
+#     Current Scene); Profile > Reload; Docks > Reload Layout.
+#   - Studio-mode transition controls laid out as a centered horizontal
+#     strip in their own dock instead of a vertical block between displays.
+#   - Preview, Program, the studio-mode Transition strip and an embedded
+#     Multiview are all dockable widgets (no fixed central widget). The
+#     Multiview dock supports click-to-switch / double-click-to-transition
+#     and tracks the multiview settings.
+# ------------------------------------------------------------------
+
 # Scene Tree Folder plugin for OBS Studio (folders in the scene list)
 #   source-bin\obs_scene_tree_view_win_v0_1_6.zip
 https://obsproject.com/forum/resources/scene-tree-folder-plugin-for-obs-studio.1500
