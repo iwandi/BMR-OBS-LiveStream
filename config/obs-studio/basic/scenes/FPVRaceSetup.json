@@ -61,7 +61,7 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Cam 08",
+    "current_scene": "Cam 15",
     "current_program_scene": "Cam 16",
     "scene_order": [
         {
@@ -149,6 +149,9 @@
             "name": "DSK - Null"
         },
         {
+            "name": "DSK - Background Only"
+        },
+        {
             "name": "Race - Grid"
         },
         {
@@ -218,7 +221,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 5,
+                "id_counter": 6,
                 "custom_size": false,
                 "items": [
                     {
@@ -385,6 +388,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "Cam 01 Example",
+                        "source_uuid": "11edd140-d1de-4ec4-bbab-2183fd45814d",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -406,7 +464,9 @@
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
                 "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": []
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -9026,68 +9086,14 @@
                         "hidden": false
                     },
                     {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/Sponsor_Medium_vci_500w.png",
-                        "uuid": "bb8d9e9b-5759-44cd-9bee-5c032fc3dcc3",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/Maxkgo.png",
-                        "uuid": "d8d0f2e9-1364-425b-9db9-979b4ebc0b9d",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/t-hobby.png",
-                        "uuid": "eed03416-cd46-4d76-8fe2-88389e0a4332",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
                         "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/Rotormaniacs Banner.png",
                         "uuid": "7ecd5f4e-98b8-41ce-8ecd-472343548dd4",
                         "selected": false,
                         "hidden": false
                     },
                     {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/BetaFPV.png",
-                        "uuid": "f6d9104b-bdb9-4e72-8e7f-a179af2675af",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/Sponsor_big_radiomaster_500w.png",
-                        "uuid": "be7a518a-6136-42ef-970a-3a5f1223b0c4",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/Sponsor_big_gemfan_500w.png",
-                        "uuid": "b3120237-b9b4-44a2-aec1-6f38399625ea",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
                         "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/AMDC.png",
                         "uuid": "4d8e56ce-827a-4cbb-ab9f-ecb4cdbe3e63",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/Velocidrone.png",
-                        "uuid": "85881789-464e-41c8-adf2-252ba1df0a18",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/DD_logo 2.png",
-                        "uuid": "67f435b4-8917-4a69-ae12-e5ab1ba54166",
-                        "selected": false,
-                        "hidden": false
-                    },
-                    {
-                        "value": "C:/RC/Streaming/BMR-OBS-LiveStream/media/logos/FoxeerLogo (2).png",
-                        "uuid": "8478d327-a51c-4e70-a18b-045b57bd8755",
                         "selected": false,
                         "hidden": false
                     }
@@ -10121,21 +10127,15 @@
                         "crop_bottom": 0,
                         "id": 11,
                         "group_item_backup": true,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
+                        "pos": {},
+                        "pos_rel": {},
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1920.0,
@@ -10176,21 +10176,15 @@
                         "crop_bottom": 0,
                         "id": 12,
                         "group_item_backup": true,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
+                        "pos": {},
+                        "pos_rel": {},
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1920.0,
@@ -10231,21 +10225,15 @@
                         "crop_bottom": 0,
                         "id": 13,
                         "group_item_backup": true,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
+                        "pos": {},
+                        "pos_rel": {},
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1920.0,
@@ -10286,21 +10274,15 @@
                         "crop_bottom": 0,
                         "id": 14,
                         "group_item_backup": true,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
+                        "pos": {},
+                        "pos_rel": {},
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds": {
                             "x": 1920.0,
@@ -17033,9 +17015,7 @@
                 "libobs.show_scene_item.2": [],
                 "libobs.hide_scene_item.2": [],
                 "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "Show on Overlay": [],
-                "Hide on Overlay": []
+                "libobs.hide_scene_item.1": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -17431,6 +17411,134 @@
             "push-to-talk-delay": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "Show on Overlay": [],
+                "Hide on Overlay": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "Cam 01 Example",
+            "uuid": "11edd140-d1de-4ec4-bbab-2183fd45814d",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "is_local_file": false,
+                "input": "https://videos-3.earthcam.com/fecnetwork/9974.flv/playlist.m3u8",
+                "hw_decode": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 520159234,
+            "name": "DSK - Background Only",
+            "uuid": "fc2cffa8-fd57-4695-b9c0-51854a8ef1f3",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 1,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "DSK - Background",
+                        "source_uuid": "798b9ec5-3270-49de-8f76-44a4eb5146dc",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
                 "Show on Overlay": [],
                 "Hide on Overlay": []
             },
@@ -18333,13 +18441,6 @@
     "transitions": [],
     "saved_projectors": [
         {
-            "name": "CameraPreview",
-            "monitor": -1,
-            "type": 1,
-            "geometry": "AdnQywADAAAAAAQQAAACEgAABe8AAAM+AAAEEAAAAjEAAAXvAAADPgAAAAAAAAAACgAAAAQQAAACMQAABe8AAAM+",
-            "alwaysOnTopOverridden": false
-        },
-        {
             "monitor": -1,
             "type": 4,
             "geometry": "AdnQywADAAAAAApa////fQAADhoAAAG2AAAKWv///5wAAA4aAAABtgAAAAIAAAAABDgAAApa////nAAADhoAAAG2",
@@ -18522,10 +18623,13 @@
                 "hide_transition": "Fade",
                 "hide_transition_duration": 300,
                 "hide_after": 0,
-                "tie": true,
+                "tie": false,
                 "scenes": [
                     {
-                        "name": "DSK - Background"
+                        "name": "DSK - Null"
+                    },
+                    {
+                        "name": "DSK - Background Only"
                     },
                     {
                         "name": "DSK - Pre-Stream"
@@ -18534,10 +18638,10 @@
                         "name": "DSK - Pre-Race"
                     },
                     {
-                        "name": "DSK - Tree"
+                        "name": "DSK - Info"
                     },
                     {
-                        "name": "DSK - Null"
+                        "name": "DSK - Clean"
                     },
                     {
                         "name": "DSK - Race"
@@ -18549,13 +18653,10 @@
                         "name": "DSK - Post-Race"
                     },
                     {
-                        "name": "DSK - Info"
-                    },
-                    {
-                        "name": "DSK - Clean"
+                        "name": "DSK - Tree"
                     }
                 ],
-                "scene": "DSK - Clean",
+                "scene": "DSK - Race",
                 "null_hotkey": [],
                 "enable_tie_hotkey": [],
                 "disable_tie_hotkey": [],
