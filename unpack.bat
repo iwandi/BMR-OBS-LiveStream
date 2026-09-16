@@ -40,10 +40,11 @@ if "!OBSNAME!"=="" (
 
 set "OBSZIP=source-bin\!OBSNAME!.zip"
 set "PLUGINZIP=source-bin\obs_scene_tree_view_win_v0_1_6.zip"
+set "DSKZIP=source-bin\downstream-keyer-0.4.4-windows.zip"
 
 rem --- 1. OBS Studio (lays down bin\, data\, obs-plugins\) ---
 echo.
-echo [1/3] Extracting OBS Studio: !OBSNAME!
+echo [1/4] Extracting OBS Studio: !OBSNAME!
 if not exist "!OBSZIP!" (
     echo [ERROR] Missing archive: !OBSZIP!
     goto :fail
@@ -53,7 +54,7 @@ if errorlevel 1 goto :fail
 
 rem --- 2. Scene Tree Folder plugin (merges on top of OBS) ---
 echo.
-echo [2/3] Extracting Scene Tree Folder plugin
+echo [2/4] Extracting Scene Tree Folder plugin
 if not exist "!PLUGINZIP!" (
     echo [ERROR] Missing archive: !PLUGINZIP!
     goto :fail
@@ -61,14 +62,29 @@ if not exist "!PLUGINZIP!" (
 "!TAR!" -xf "!PLUGINZIP!" -C .
 if errorlevel 1 goto :fail
 
-rem --- 3. Repoint absolute asset/script paths to THIS folder ---
+rem --- 3. Downstream Keyer plugin (overlay layer, merges on top) ---
+rem  Provides the downstream key used to composite the race overlay
+rem  on top of the live camera, independent of which camera is on
+rem  program. The keyer itself ('Overlay', channel 7) is pre-configured
+rem  in the scene collection JSON, so it appears automatically once this
+rem  DLL is present. Zip layout is obs-plugins\ + data\, extracts as-is.
+echo.
+echo [3/4] Extracting Downstream Keyer plugin
+if not exist "!DSKZIP!" (
+    echo [ERROR] Missing archive: !DSKZIP!
+    goto :fail
+)
+"!TAR!" -xf "!DSKZIP!" -C .
+if errorlevel 1 goto :fail
+
+rem --- 4. Repoint absolute asset/script paths to THIS folder ---
 rem The scene collection stores media sources and loaded Lua/Python
 rem scripts (the Grid organizer, camera control, refresh-browsers) as
 rem absolute paths. After a fresh clone or a move they point at the old
 rem location, so those assets and scripts silently fail to load. This
 rem step rewrites them to wherever the repo now lives.
 echo.
-echo [3/3] Normalizing scene paths to this folder
+echo [4/4] Normalizing scene paths to this folder
 if not exist "normalize-paths.ps1" (
     echo [ERROR] Missing helper: normalize-paths.ps1
     goto :fail

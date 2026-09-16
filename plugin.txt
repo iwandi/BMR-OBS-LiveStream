@@ -1,3 +1,13 @@
-# Scene Tree Folder plugin for OBS Studio 0.1.5
+# Third-party OBS plugins bundled with this portable install.
+# Each is shipped as a zip in source-bin\ and extracted by unpack.bat.
+
+# Scene Tree Folder plugin for OBS Studio (folders in the scene list)
+#   source-bin\obs_scene_tree_view_win_v0_1_6.zip
 https://obsproject.com/forum/resources/scene-tree-folder-plugin-for-obs-studio.1500
 https://github.com/DigitOtter/obs_scene_tree_view/releases/tag/v0.1.6
+
+# Downstream Keyer 0.4.4 (overlay layer composited on top of program,
+# independent of the live camera; keyer pre-configured in the scene JSON)
+#   source-bin\downstream-keyer-0.4.4-windows.zip
+https://obsproject.com/forum/resources/downstream-keyer.1254/
+https://github.com/exeldro/obs-downstream-keyer/releases/tag/0.4.4
